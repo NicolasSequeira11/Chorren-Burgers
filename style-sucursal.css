@@ -1,0 +1,139 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: whitesmoke;
+}
+
+header{
+	display: flex;
+	height: 100px;
+	background-color: black;
+	width: 100%;
+	margin: auto;
+	border-bottom: 4px #ff5f00 solid;
+}
+
+.logo{
+	display: flex;
+	vertical-align: middle;
+	margin: 10px 0 10px;
+}
+
+header nav{
+	display: flex;
+	width: 100%;
+	justify-content:space-around;
+}
+
+header nav ul{
+	display: flex;
+	margin-left: 20px;
+}
+
+header nav ul li{
+	display: flex;
+	margin: auto 20px;
+	justify-content: center;
+	color: white;
+	padding: 1px;
+	font-size: 20px;
+	font-family: 'Bebas Neue', cursive;
+}
+
+header nav ul li:hover{
+	background-color: white;
+	border-radius: 100px;
+	padding: 1px;
+	color: black;
+}
+
+header nav ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	border-radius: 25px;
+}
+
+header nav ul li a:hover{
+	color: #ff5f00;
+}
+
+header nav ul li a:active{
+	text-decoration: none;
+	background-color: #ff5f00;
+	padding: 10px;
+	border-radius: 25px;
+}
+
+.contenedor-consultas{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+	margin: 0 auto 50px;
+    background-color: whitesmoke;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.contenedor-consultas h1{
+    width: 50%;
+    margin: auto;
+	text-align: center;
+	font-size: 40px;
+    margin: 40px auto 20px;
+    color: #ff5f00;
+	font-family: 'Bebas Neue', cursive;
+}
+
+footer{
+	width: 100%;
+	display: flex;
+	margin: auto;
+	background-color: black;
+	flex-direction: column;
+	border-top: 4px solid #ff5f00;
+}
+
+.footer-logo{
+	display: flex;
+	width: 80%;
+	margin: 40px auto;
+}
+
+.footer-logo img{
+	display: flex;
+	max-width: 150px;
+	margin: auto;
+}
+
+.footer-info{
+	display: flex;
+	width: 80%;
+	margin: auto;
+	border-top: 2px solid white;
+}
+
+.footer-info p{
+	display: flex;
+	width: 100%;
+	margin: 30px auto 20px;
+	padding: 10px;
+	font-size: 15px;
+	color: white;
+}
+
+.footer-info-redes{
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+	margin: 30px auto 20px;
+	padding: 3px;
+}
+
+.footer-info-redes img{
+	display: flex;
+	margin: 0 5px;
+}
