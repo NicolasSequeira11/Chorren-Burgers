@@ -14,6 +14,8 @@ header{
 	background-color: black;
 	width: 100%;
 	margin: auto;
+	position: fixed;
+	z-index: 1000;
 	border-bottom: 4px #ff5f00 solid;
 }
 
@@ -21,6 +23,18 @@ header{
 	display: flex;
 	vertical-align: middle;
 	margin: 10px 0 10px;
+	animation-name: logo;
+	animation-duration: 1s;
+}
+
+@keyframes logo{
+	0%{
+		opacity: 0%;
+	}
+	100%{
+	
+		opacity: 100%;
+	}
 }
 
 header nav{
@@ -41,14 +55,25 @@ header nav ul li{
 	color: white;
 	padding: 1px;
 	font-size: 20px;
-	font-family: 'Bebas Neue', cursive;
+	border-radius: 15px;
+	animation-name: nav-li;
+	animation-duration: 1s;
+}
+
+@keyframes nav-li{
+	0%{
+		opacity: 0%;
+	}
+	100%{
+		opacity: 100%;
+	}
 }
 
 header nav ul li:hover{
-	background-color: white;
-	border-radius: 100px;
+	border-radius: 35px;
 	padding: 1px;
-	color: black;
+	background-color: #ff5f00;
+	transition-duration: 0.9s;
 }
 
 header nav ul li a{
@@ -56,17 +81,15 @@ header nav ul li a{
 	color: white;
 	padding: 10px;
 	border-radius: 25px;
-}
-
-header nav ul li a:hover{
-	color: #ff5f00;
+	font-family: 'Bebas Neue', cursive;
 }
 
 header nav ul li a:active{
 	text-decoration: none;
-	background-color: #ff5f00;
+	background-color: #ff8e4a;
+	color: #ff5f00;
 	padding: 10px;
-	border-radius: 25px;
+	border-radius: 35px;
 }
 
 .cont-dest{

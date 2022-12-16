@@ -5,7 +5,7 @@
 }
 
 body {
-	background-color: whitesmoke;
+	background-color: white;
 }
 
 header{
@@ -14,6 +14,8 @@ header{
 	background-color: black;
 	width: 100%;
 	margin: auto;
+	position: fixed;
+	z-index: 1000;
 	border-bottom: 4px #ff5f00 solid;
 }
 
@@ -21,6 +23,18 @@ header{
 	display: flex;
 	vertical-align: middle;
 	margin: 10px 0 10px;
+	animation-name: logo;
+	animation-duration: 1s;
+}
+
+@keyframes logo{
+	0%{
+		opacity: 0%;
+	}
+	100%{
+	
+		opacity: 100%;
+	}
 }
 
 header nav{
@@ -41,14 +55,25 @@ header nav ul li{
 	color: white;
 	padding: 1px;
 	font-size: 20px;
-	font-family: 'Bebas Neue', cursive;
+	border-radius: 15px;
+	animation-name: nav-li;
+	animation-duration: 1s;
+}
+
+@keyframes nav-li{
+	0%{
+		opacity: 0%;
+	}
+	100%{
+		opacity: 100%;
+	}
 }
 
 header nav ul li:hover{
-	background-color: white;
-	border-radius: 100px;
+	border-radius: 35px;
 	padding: 1px;
-	color: black;
+	background-color: #ff5f00;
+	transition-duration: 0.9s;
 }
 
 header nav ul li a{
@@ -56,24 +81,21 @@ header nav ul li a{
 	color: white;
 	padding: 10px;
 	border-radius: 25px;
-}
-
-header nav ul li a:hover{
-	color: #ff5f00;
+	font-family: 'Bebas Neue', cursive;
 }
 
 header nav ul li a:active{
 	text-decoration: none;
-	background-color: #ff5f00;
+	background-color: #ff8e4a;
+	color: #ff5f00;
 	padding: 10px;
-	border-radius: 25px;
+	border-radius: 35px;
 }
 
 .contenedor-consultas{
     display: flex;
     flex-direction: column;
     width: 100%;
-	margin: 0 auto 50px;
     background-color: whitesmoke;
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -86,6 +108,64 @@ header nav ul li a:active{
     margin: 40px auto 20px;
     color: #ff5f00;
 	font-family: 'Bebas Neue', cursive;
+}
+
+form h4{
+	display: flex;
+    width: 100%;
+    margin: 13px auto 0;
+	color: #ff5f00;
+	
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto 30px;
+}
+
+form input{
+    flex-direction: column;
+    width: 100%;
+    margin: 5px auto;
+    border-radius: 5px;
+    height: 7vh;
+    padding: 10px;
+    border: 1px whitesmoke solid;
+    cursor: pointer;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+form input:hover{
+    border: 1px solid rgb(136, 136, 136);
+}
+
+form textarea{
+    width: 100%;
+    margin: 5px auto;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px whitesmoke solid;
+    cursor: pointer;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+form button{
+    width: 30%;
+    margin: 15px auto 40px;
+    background-color: #ff5f00;
+    height: 7vh;
+    border-radius: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+	font-family: 'Bebas Neue', cursive;
+}
+
+form button:active{
+	background-color: white;
+	color: #ff5f00 ;
 }
 
 footer{
