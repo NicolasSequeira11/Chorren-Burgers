@@ -360,18 +360,6 @@ footer{
 
 @media screen and (max-width: 600px) {
 
-	#main-index{
-		display: grid;
-		grid-template-columns: 50% 50%;
-		grid-template-areas: 
-		"img img"
-		"menu-text menu-text"
-		"menu menu"
-		"promo-text promo-text"
-		"promo promo"
-		;
-	}
-
 	header{
 		vertical-align: center;
 		justify-content: space-around;
