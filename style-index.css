@@ -20,6 +20,7 @@ body {
 	;
 }
 
+
 header{
 	display: flex;
 	height: 100px;
@@ -120,6 +121,7 @@ header nav ul li a:active{
 	padding: 10px;
 	border-radius: 35px;
 }
+
 
 #img-index{
 	grid-area: img;
@@ -358,17 +360,65 @@ footer{
 
 @media screen and (max-width: 320px) {
 
+	#main-index{
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-areas: 
+		"img img"
+		"menu-text menu-text"
+		"menu menu"
+		"promo-text promo-text"
+		"promo promo"
+		;
+	}
+
 	header{
 		vertical-align: center;
 		justify-content: space-around;
-	}
-
-	header nav ul{
 		display: flex;
-		width: 50vw;
+		position: fixed;
+		width: 100vw;
 	}
 
-	header nav ul li{
+	header nav{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.logo{
+		
+	}
+
+	.enlaces-menu{
+		display: none;
+		flex-direction: column;
+		vertical-align: center;
+		margin: auto;
+		width: 100vw;
+		height: 100vh;
+		background-color: ;
+	}
+
+	.enlaces-menu.activado{
+		display: flex;
+		margin: auto;
+		padding: 22px;
+		position: relative;
+		top: 280px;
+		background-color: black;
+		animation:muestraMenu 350ms ease-in-out both;
+	}
+
+	.enlaces-menu li{
+		margin: 5px auto;
+		padding: 10px;
+	}
+
+	.enlaces-menu li a{
+		font-size: 25px;
+	}
+
+	.logo{
 		display: none;
 	}
 
