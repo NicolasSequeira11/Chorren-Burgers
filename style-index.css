@@ -358,7 +358,7 @@ footer{
 	margin: 0 5px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
 
 	#main-index{
 		display: grid;
@@ -385,10 +385,6 @@ footer{
 		flex-direction: column;
 	}
 
-	.logo{
-		
-	}
-
 	.enlaces-menu{
 		display: none;
 		flex-direction: column;
@@ -396,7 +392,6 @@ footer{
 		margin: auto;
 		width: 100vw;
 		height: 100vh;
-		background-color: ;
 	}
 
 	.enlaces-menu.activado{
