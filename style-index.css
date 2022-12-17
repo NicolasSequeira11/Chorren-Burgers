@@ -387,7 +387,7 @@ footer{
 		margin: auto;
 		padding: 22px;
 		position: relative;
-		top: 280px;
+		top: 250px;
 		background-color: black;
 		animation:muestraMenu 350ms ease-in-out both;
 	}
