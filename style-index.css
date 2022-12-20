@@ -390,7 +390,7 @@ footer{
 	.enlaces-menu.activado{
 		display: flex;
 		margin: auto;
-		padding: 22px;
+		padding: 25px;
 		position: relative;
 		top: 229px;
 		background-color: black;
