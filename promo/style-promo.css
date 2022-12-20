@@ -37,6 +37,23 @@ header{
 	}
 }
 
+.ham{
+    position: absolute;
+    top:20px;
+    right: 40px;
+    background-color: transparent;
+    border:none;
+}
+
+.ham span{
+    display: none;
+    background-color: black;
+    height: 3px;
+    width: 28px;
+    margin: 5px auto;
+    border-radius: 2px;
+}
+
 header nav{
 	display: flex;
 	width: 100%;
@@ -229,4 +246,90 @@ footer{
 .footer-info-redes img{
 	display: flex;
 	margin: 0 5px;
+}
+
+@media screen and (max-width: 600px) {
+	
+	header{
+		vertical-align: center;
+		justify-content: space-around;
+		display: flex;
+		position: fixed;
+		width: 100vw;
+	}
+
+	header nav{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.enlaces-menu{
+		display: none;
+		flex-direction: column;
+		vertical-align: center;
+		margin: auto;
+		width: 100vw;
+		height: 100vh;
+	}
+
+	.enlaces-menu.activado{
+		display: flex;
+		margin: auto;
+		padding: 22px;
+		position: relative;
+		top: 250px;
+		background-color: black;
+		animation:muestraMenu 350ms ease-in-out both;
+	}
+
+	.enlaces-menu li{
+		margin: 5px auto;
+		padding: 10px;
+	}
+
+	.enlaces-menu li a{
+		font-size: 25px;
+	}
+
+	.logo{
+		display: none;
+	}
+
+	.ham{
+		margin: 15px 0;
+	}
+
+	.ham span{
+		display: flex;
+		background-color: white;
+	}
+
+
+	footer{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.footer-info{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.footer-info p{
+		justify-content: center;
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	.footer-info-redes{
+		display: flex;
+		justify-content: center;
+	}
+
+	.footer-info-redes img{
+		display: flex;
+		margin: 5px 0 -20px;
+		padding: 5px;
+	}
+
 }
