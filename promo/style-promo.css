@@ -304,6 +304,45 @@ footer{
 		background-color: white;
 	}
 
+	.title-menu{
+		display: flex;
+		width: 80%;
+		font-size: 50px;
+		margin: 50px auto 25px;
+		justify-content:center;
+		font-family: 'Bebas Neue', cursive;
+	}
+	
+	.title-menu h1{
+		display: flex;
+		width: 80%;
+		margin: auto;
+		justify-content:start;
+	}
+
+	.menu-img{
+		display: flex;
+		width: 80%;
+		margin: auto;
+		flex-wrap: wrap;
+	}
+	
+	.menu-img div{
+		display: flex;
+		width: 100%;
+		margin: auto;	
+		flex-direction: column;
+		padding: 15px;
+	}
+	
+	.menu-img img{
+		display: flex;
+		width: 100%;
+		margin: auto;
+		object-fit: cover;
+		border-radius: 20px;
+	}
+
 
 	footer{
 		display: flex;

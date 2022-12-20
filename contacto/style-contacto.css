@@ -122,7 +122,7 @@ header nav ul li a:active{
     margin: auto;
 	text-align: center;
 	font-size: 40px;
-    margin: 40px auto 20px;
+    margin: 140px auto 20px;
     color: #ff5f00;
 	font-family: 'Bebas Neue', cursive;
 }
@@ -291,6 +291,81 @@ footer{
 		background-color: white;
 	}
 
+	.contenedor-consultas{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		background-color: whitesmoke;
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+	
+	.contenedor-consultas h1{
+		width: 100%;
+		margin: auto;
+		text-align: center;
+		font-size: 30px;
+		margin: 140px auto 20px;
+		color: #ff5f00;
+		font-family: 'Bebas Neue', cursive;
+	}
+	
+	form h4{
+		display: flex;
+		width: 100%;
+		margin: 13px auto 0;
+		color: #ff5f00;
+		
+	}
+	
+	form{
+		display: flex;
+		flex-direction: column;
+		width: 75%;
+		margin: 0 auto 30px;
+	}
+	
+	form input{
+		flex-direction: column;
+		width: 100%;
+		margin: 5px auto;
+		border-radius: 5px;
+		height: 7vh;
+		padding: 10px;
+		border: 1px whitesmoke solid;
+		cursor: pointer;
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+	
+	form input:hover{
+		border: 1px solid rgb(136, 136, 136);
+	}
+	
+	form textarea{
+		width: 100%;
+		margin: 5px auto;
+		border-radius: 5px;
+		padding: 10px;
+		border: 1px whitesmoke solid;
+		cursor: pointer;
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+	
+	form button{
+		width: 100%;
+		margin: 15px auto 40px;
+		background-color: #ff5f00;
+		height: 7vh;
+		border-radius: 30px;
+		font-size: 25px;
+		cursor: pointer;
+		color: white;
+		font-family: 'Bebas Neue', cursive;
+	}
+	
+	form button:active{
+		background-color: white;
+		color: #ff5f00 ;
+	}
 
 	footer{
 		display: flex;

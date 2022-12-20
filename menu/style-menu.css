@@ -186,7 +186,7 @@ header nav ul li a:active{
 
 #menu{
 	display: grid;
-	grid-template-columns: 25% 25% 25%;
+	grid-template-columns: 90%;
 	grid-template-rows: auto;
 	gap: 50px;
 	justify-content: center;
@@ -197,7 +197,7 @@ header nav ul li a:active{
 
 #menu-bebidas{
 	display: grid;
-	grid-template-columns: 25% 25% 25%;
+	grid-template-columns: 90%;
 	grid-template-rows: auto;
 	gap: 50px;
 	justify-content: center;
@@ -208,7 +208,7 @@ header nav ul li a:active{
 
 #menu-postres{
 	display: grid;
-	grid-template-columns: 25% 25%;
+	grid-template-columns: 90%;
 	grid-template-rows: auto;
 	justify-content: center;
 	width: 90%;
@@ -218,7 +218,7 @@ header nav ul li a:active{
 
 .menu-img{
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	width: 100%;
 	margin: auto;
 	flex-wrap: wrap;
@@ -226,7 +226,7 @@ header nav ul li a:active{
 
 .menu-img div{
 	display: flex;
-	width: 80%;
+	width: 30%;
 	margin: auto;	
 	flex-direction: column;
 	padding: 15px;
@@ -234,7 +234,7 @@ header nav ul li a:active{
 
 .menu-img img{
 	display: flex;
-	width: 100%;
+	width: 75%;
 	margin: auto;
 	object-fit: cover;
 	border-radius: 20px;
@@ -309,6 +309,7 @@ footer{
 
 @media screen and (max-width: 600px) {
 	
+	
 	header{
 		vertical-align: center;
 		justify-content: space-around;
@@ -363,6 +364,61 @@ footer{
 		background-color: white;
 	}
 
+	#menu{
+		display: grid;
+		grid-template-columns: 90%;
+		grid-template-rows: auto;
+		gap: 50px;
+		justify-content: center;
+		width: 90%;
+		margin: auto;
+		grid-area: menu;
+	}
+	
+	#menu-bebidas{
+		display: grid;
+		grid-template-columns: 90%;
+		grid-template-rows: auto;
+		gap: 50px;
+		justify-content: center;
+		width: 90%;
+		margin: auto;
+		grid-area: bebidas;
+	}
+	
+	#menu-postres{
+		display: grid;
+		grid-template-columns: 90%;
+		grid-template-rows: auto;
+		justify-content: center;
+		width: 90%;
+		margin: auto;
+		grid-area: postres;
+	}
+	
+	.menu-img{
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		margin: auto;
+		flex-wrap: wrap;
+	}
+	
+	.menu-img div{
+		display: flex;
+		width: 50%;
+		margin: auto;	
+		flex-direction: column;
+		padding: 15px;
+	}
+	
+	.menu-img img{
+		display: flex;
+		width: 90%;
+		margin: auto;
+		object-fit: cover;
+		border-radius: 20px;
+	}
 
 	footer{
 		display: flex;
