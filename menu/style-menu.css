@@ -337,7 +337,7 @@ footer{
 		margin: auto;
 		padding: 22px;
 		position: relative;
-		top: 250px;
+		top: 229px;
 		background-color: black;
 		animation:muestraMenu 350ms ease-in-out both;
 	}
@@ -351,8 +351,28 @@ footer{
 		font-size: 25px;
 	}
 
+	.div-logo{
+		display: flex;
+		height: 105px;
+		vertical-align: center;
+	}
+
 	.logo{
-		display: none;
+		display: flex;
+		vertical-align: middle;
+		margin: 10px 0 10px 30px;
+		animation-name: logo;
+		animation-duration: 1s;
+	}
+	
+	@keyframes logo{
+		0%{
+			opacity: 0%;
+		}
+		100%{
+		
+			opacity: 100%;
+		}
 	}
 
 	.ham{
