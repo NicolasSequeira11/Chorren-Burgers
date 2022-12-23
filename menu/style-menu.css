@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 #main-menu{
@@ -146,6 +147,7 @@ header nav ul li a:active{
 	height: 7vh;
 	position: fixed;
 	font-size: 20px;
+	z-index: 200;
 	background-color: #ff5f00;
 }
 
@@ -389,13 +391,14 @@ footer{
 
 	.div-logo{
 		display: flex;
-		height: 105px;
+		height: 100%;
 		vertical-align: center;
 	}
 
 	.logo{
 		display: flex;
 		vertical-align: middle;
+		width: 21%;
 		margin: 10px 0 10px 30px;
 		animation-name: logo;
 		animation-duration: 1s;

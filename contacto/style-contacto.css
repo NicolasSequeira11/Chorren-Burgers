@@ -279,13 +279,14 @@ footer{
 
 	.div-logo{
 		display: flex;
-		height: 105px;
+		height: 100%;
 		vertical-align: center;
 	}
 
 	.logo{
 		display: flex;
 		vertical-align: middle;
+		width: 21%;
 		margin: 10px 0 10px 30px;
 		animation-name: logo;
 		animation-duration: 1s;

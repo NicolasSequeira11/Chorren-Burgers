@@ -306,7 +306,7 @@ footer{
 
 	.div-logo{
 		display: flex;
-		height: 105px;
+		height: 100%;
 		vertical-align: center;
 	}
 
@@ -314,6 +314,7 @@ footer{
 		display: flex;
 		vertical-align: middle;
 		margin: 10px 0 10px 30px;
+		width: 21%;
 		animation-name: logo;
 		animation-duration: 1s;
 	}

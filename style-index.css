@@ -168,23 +168,20 @@ header nav ul li a:active{
 	display: flex;
 	margin: auto;
 	width: 100%;
+	justify-content: space-between;
 }
 
 .cont-dest-text h1{
 	display: flex;
-	margin: auto;
 	font-size: 40px;
-	justify-content: space-around;
 	font-family: 'Bebas Neue', cursive;
 }
 
 .cont-dest-text a{
 	display: flex;
-	margin: auto;
-	width: 100%;
 	font-size: 20px;
+	margin: auto 0;
 	color: #fc8600;
-	justify-content:flex-end;
 	font-family: 'Bebas Neue', cursive;
 	text-decoration: none;
 }
@@ -250,20 +247,18 @@ header nav ul li a:active{
 	display: flex;
 	margin: auto;
 	width: 100%;
+	justify-content: space-between;
 }
 
 .cont-promo-text h1{
 	display: flex;
-	margin: auto;
 	font-size: 40px;
-	justify-content: space-around;
 	font-family: 'Bebas Neue', cursive;
 }
 
 .cont-promo-text a{
 	display: flex;
-	margin: auto;
-	width: 100%;
+	margin: auto 0;
 	font-size: 20px;
 	color: #fc8600;
 	justify-content:flex-end;
@@ -402,7 +397,7 @@ footer{
 
 	.div-logo{
 		display: flex;
-		height: 105px;
+		height: 100%;
 		vertical-align: center;
 	}
 
@@ -412,6 +407,7 @@ footer{
 		margin: 10px 0 10px 30px;
 		animation-name: logo;
 		animation-duration: 1s;
+		width: 21%;
 	}
 
 	.ham{
