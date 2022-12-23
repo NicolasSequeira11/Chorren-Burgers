@@ -297,6 +297,13 @@ header nav ul li a:active{
 	font-family: 'Bebas Neue', cursive;
 }
 
+.menu-img p{
+	display: flex;
+	text-align: center;
+	height: 120px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
 #footer{
 	grid-area: footer;
 	border-top: 4px solid #ff5f00;
@@ -432,7 +439,7 @@ footer{
 	.menu-img div{
 		display: flex;
 		width: 50%;
-		margin: auto;	
+		margin: 20px auto;	
 		flex-direction: column;
 		padding: 15px;
 	}
