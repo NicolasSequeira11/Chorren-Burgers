@@ -439,7 +439,7 @@ footer{
 	.menu-img div{
 		display: flex;
 		width: 50%;
-		margin: 20px auto;	
+		margin: auto;	
 		flex-direction: column;
 		padding: 15px;
 	}
@@ -454,6 +454,10 @@ footer{
 
 	.menu-img h1{
 		font-size: 20px;
+	}
+
+	.menu-img p{
+		font-size: 13px;
 	}
 
 	footer{
