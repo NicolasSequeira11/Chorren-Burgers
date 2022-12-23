@@ -256,14 +256,6 @@ footer{
 
 @media screen and (max-width: 600px) {
 	
-	header{
-		vertical-align: center;
-		justify-content: space-around;
-		display: flex;
-		position: fixed;
-		width: 100vw;
-	}
-
 	header nav{
 		display: flex;
 		flex-direction: column;
@@ -286,6 +278,7 @@ footer{
 		top: 229px;
 		background-color: black;
 		animation:muestraMenu 350ms ease-in-out both;
+		z-index: 2000;
 	}
 
 	.enlaces-menu li{
@@ -309,16 +302,6 @@ footer{
 		margin: 10px 0 10px 30px;
 		animation-name: logo;
 		animation-duration: 1s;
-	}
-	
-	@keyframes logo{
-		0%{
-			opacity: 0%;
-		}
-		100%{
-		
-			opacity: 100%;
-		}
 	}
 
 	.ham{
