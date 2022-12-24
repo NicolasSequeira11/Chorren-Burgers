@@ -20,6 +20,37 @@ body {
 	;
 }
 
+.boton-pedido{
+	display: block;
+	position: fixed;
+	background-color:#0dc143;
+	z-index: 2000;
+	width: 30%;
+	height: 13%;
+	left: 89vw;
+	top: 77vh;
+	border-radius: 15px;
+}
+
+.contenedor-text-boton{
+	width: 35%;
+	display: flex;
+}
+
+.contenedor-text-boton img{
+	display: flex;
+	margin: 5px auto;
+	width: 45%;	
+}
+
+.boton-pedido a{
+	text-decoration: none;
+	color: #ffffff;
+	margin: auto;
+	text-align: center;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 10px;
+}
 
 header{
 	display: flex;
@@ -361,6 +392,46 @@ footer{
 
 @media screen and (max-width: 600px) {
 
+	.boton-pedido{
+		display: block;
+		position: fixed;
+		background-color:#0dc143;
+		z-index: 2000;
+		width: 100%;
+		height: 10%;
+		left: 0vw;
+		top: 90vh;
+		border-radius: 15px;
+	}
+	
+	.contenedor-text-boton{
+		width: 90%;
+		margin: auto;
+		display: flex;
+		flex-direction: row;
+	}
+	
+	.contenedor-text-boton img{
+		display: flex;
+		margin: auto;
+		width: 30%;
+	}
+
+	.contenedor-text-boton h1{
+		width: 100%;
+		margin: auto;
+	}
+	
+	.contenedor-text-boton a{
+		display: flex;
+		width: 65%;
+		text-decoration: none;
+		color: #ffffff;
+		margin: auto;
+		font-family: 'Bebas Neue', cursive;
+		font-size: 14px;
+	}
+
 	header nav{
 		display: flex;
 		flex-direction: column;
@@ -455,7 +526,7 @@ footer{
 	.footer-info p{
 		justify-content: center;
 		text-align: center;
-		margin-top: 10px;
+		margin: 10px auto 90px;
 	}
 
 	.footer-info-redes{
