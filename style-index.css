@@ -394,7 +394,6 @@ footer{
 
 	.boton-pedido{
 		display: block;
-		position: fixed;
 		background-color:#0dc143;
 		z-index: 2000;
 		width: 100%;
