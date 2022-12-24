@@ -21,6 +21,10 @@ body {
 	;
 }
 
+#boton{
+	grid-area: boton;
+}
+
 .boton-pedido{
 	display: block;
 	position: fixed;
