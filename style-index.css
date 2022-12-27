@@ -43,6 +43,24 @@ body {
 	width: 45%;	
 }
 
+.contenedor-text-boton img:hover{
+	animation-name: img-boton;
+	animation-duration: 0.2s;
+}
+
+@keyframes img-boton {
+	0%{
+		opacity: 100%;
+	}
+	50%{
+		opacity: 50%;
+		transform: rotate(30deg)
+	}
+	100%{
+		opacity: 100%;
+	}
+}
+
 .boton-pedido a{
 	text-decoration: none;
 	color: #ffffff;
@@ -51,7 +69,27 @@ body {
 	font-family: 'Bebas Neue', cursive;
 	font-size: 15px;
 	animation-name: boton;
-	animation-duration: 1.5s;
+	animation-duration: 0.5s;
+}
+
+.boton-pedido a:hover{
+	animation-name: texto-boton;
+	animation-duration: 0.5s;
+}
+
+@keyframes texto-boton{
+	0%{
+		color: #0dc143;
+		opacity: 100%;
+	}
+	50%{
+		color: white;
+		opacity: 20%;
+	}
+	100%{
+		color:#0dc143;
+		opacity: 100%;
+	}
 }
 
 @keyframes boton{
