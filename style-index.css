@@ -72,6 +72,13 @@ body {
 	animation-duration: 0.5s;
 }
 
+@keyframes boton{
+	0%{
+		transform: translate(200px, 0);
+		opacity: 0%;
+	}
+}
+
 .boton-pedido a:hover{
 	animation-name: texto-boton;
 	animation-duration: 0.5s;
@@ -89,13 +96,6 @@ body {
 	100%{
 		color:#0dc143;
 		opacity: 100%;
-	}
-}
-
-@keyframes boton{
-	0%{
-		transform: translate(200px, 0);
-		opacity: 0%;
 	}
 }
 
@@ -440,9 +440,6 @@ footer{
 @media screen and (max-width: 600px) {
 
 	.boton-pedido{
-		display: block;
-		background-color:#0dc143;
-		z-index: 2000;
 		width: 100%;
 		height: 10%;
 		left: 0vw;
@@ -453,12 +450,10 @@ footer{
 	.contenedor-text-boton{
 		width: 90%;
 		margin: 12px auto;
-		display: flex;
 		flex-direction: row;
 	}
 	
 	.contenedor-text-boton img{
-		display: flex;
 		margin: auto;
 		width: 28%;
 	}
@@ -471,10 +466,6 @@ footer{
 	.contenedor-text-boton a{
 		display: flex;
 		width: 50%;
-		text-decoration: none;
-		color: #ffffff;
-		margin: auto;
-		font-family: 'Bebas Neue', cursive;
 		font-size: 20px;
 		animation-name: boton;
 		animation-duration: 1.5s;
@@ -522,17 +513,12 @@ footer{
 	}
 
 	.div-logo{
-		display: flex;
 		height: 100%;
 		vertical-align: center;
 	}
 
 	.logo{
-		display: flex;
-		vertical-align: middle;
 		margin: 10px 0 10px 30px;
-		animation-name: logo;
-		animation-duration: 1s;
 		width: 21%;
 	}
 
@@ -557,24 +543,20 @@ footer{
 	}
 
 	.cont-dest-img{
-		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
 	}
 
 	.cont-promo-img{
-		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
 	}
 
 	footer{
-		display: flex;
 		flex-direction: column;
 	}
 
 	.footer-info{
-		display: flex;
 		flex-direction: column;
 	}
 
@@ -585,12 +567,10 @@ footer{
 	}
 
 	.footer-info-redes{
-		display: flex;
 		justify-content: center;
 	}
 
 	.footer-info-redes img{
-		display: flex;
 		margin: 5px 0 -20px;
 		padding: 5px;
 	}

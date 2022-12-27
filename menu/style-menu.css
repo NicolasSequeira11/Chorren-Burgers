@@ -385,7 +385,6 @@ header nav ul li a:active{
 
 #footer{
 	grid-area: footer;
-	border-top: 4px solid #ff5f00;
 }
 
 footer{
@@ -393,6 +392,7 @@ footer{
 	display: flex;
 	background-color: black;
 	flex-direction: column;
+	border-top: 4px solid #ff5f00;
 }
 
 .footer-logo{
@@ -441,9 +441,6 @@ footer{
 @media screen and (max-width: 600px) {
 
 	.boton-pedido{
-		display: block;
-		background-color:#0dc143;
-		z-index: 2000;
 		width: 100%;
 		height: 10%;
 		left: 0vw;
@@ -454,12 +451,10 @@ footer{
 	.contenedor-text-boton{
 		width: 90%;
 		margin: 12px auto;
-		display: flex;
 		flex-direction: row;
 	}
 	
 	.contenedor-text-boton img{
-		display: flex;
 		margin: auto;
 		width: 28%;
 	}
@@ -472,10 +467,6 @@ footer{
 	.contenedor-text-boton a{
 		display: flex;
 		width: 50%;
-		text-decoration: none;
-		color: #ffffff;
-		margin: auto;
-		font-family: 'Bebas Neue', cursive;
 		font-size: 20px;
 		animation-name: boton;
 		animation-duration: 1.5s;
@@ -523,18 +514,13 @@ footer{
 	}
 
 	.div-logo{
-		display: flex;
 		height: 100%;
 		vertical-align: center;
 	}
 
 	.logo{
-		display: flex;
-		vertical-align: middle;
 		width: 21%;
 		margin: 10px 0 10px 30px;
-		animation-name: logo;
-		animation-duration: 1s;
 	}
 
 	.ham{
@@ -553,29 +539,13 @@ footer{
 	.title-menu{
 		justify-content: center;
 	}
-
-	.menu-img{
-		display: flex;
-		flex-direction: row;
-		width: 100%;
-		margin: auto;
-		flex-wrap: wrap;
-	}
 	
 	.menu-img div{
-		display: flex;
 		width: 50%;
-		margin: auto;	
-		flex-direction: column;
-		padding: 15px;
 	}
 	
 	.menu-img img{
-		display: flex;
-		width: 90%;
-		margin: auto;
-		object-fit: cover;
-		border-radius: 20px;
+		width: 100%;
 	}
 
 	.menu-img h1{
@@ -587,12 +557,10 @@ footer{
 	}
 
 	footer{
-		display: flex;
 		flex-direction: column;
 	}
 
 	.footer-info{
-		display: flex;
 		flex-direction: column;
 	}
 
@@ -603,12 +571,10 @@ footer{
 	}
 
 	.footer-info-redes{
-		display: flex;
 		justify-content: center;
 	}
 
 	.footer-info-redes img{
-		display: flex;
 		margin: 5px 0 -20px;
 		padding: 5px;
 	}

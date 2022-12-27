@@ -323,9 +323,6 @@ footer{
 @media screen and (max-width: 600px) {
 	
 	.boton-pedido{
-		display: block;
-		background-color:#0dc143;
-		z-index: 2000;
 		width: 100%;
 		height: 10%;
 		left: 0vw;
@@ -336,12 +333,10 @@ footer{
 	.contenedor-text-boton{
 		width: 90%;
 		margin: 12px auto;
-		display: flex;
 		flex-direction: row;
 	}
 	
 	.contenedor-text-boton img{
-		display: flex;
 		margin: auto;
 		width: 28%;
 	}
@@ -354,10 +349,6 @@ footer{
 	.contenedor-text-boton a{
 		display: flex;
 		width: 50%;
-		text-decoration: none;
-		color: #ffffff;
-		margin: auto;
-		font-family: 'Bebas Neue', cursive;
 		font-size: 20px;
 		animation-name: boton;
 		animation-duration: 1.5s;
@@ -405,18 +396,13 @@ footer{
 	}
 
 	.div-logo{
-		display: flex;
 		height: 100%;
 		vertical-align: center;
 	}
 
 	.logo{
-		display: flex;
-		vertical-align: middle;
 		width: 21%;
 		margin: 10px 0 10px 30px;
-		animation-name: logo;
-		animation-duration: 1s;
 	}
 
 	.ham{
@@ -428,74 +414,17 @@ footer{
 		background-color: white;
 	}
 
-	.contenedor-consultas{
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		background-color: whitesmoke;
-		font-family: 'Source Sans Pro', sans-serif;
-	}
-	
 	.contenedor-consultas h1{
 		width: 100%;
-		margin: auto;
-		text-align: center;
 		font-size: 27px;
-		margin: 140px auto 20px;
-		color: #ff5f00;
-	}
-	
-	form h4{
-		display: flex;
-		width: 100%;
-		margin: 13px auto 0;
-		color: #ff5f00;
-		
 	}
 	
 	form{
-		display: flex;
-		flex-direction: column;
 		width: 75%;
-		margin: 0 auto 30px;
-	}
-	
-	form input{
-		flex-direction: column;
-		width: 100%;
-		margin: 5px auto;
-		border-radius: 5px;
-		height: 7vh;
-		padding: 10px;
-		border: 1px whitesmoke solid;
-		cursor: pointer;
-		font-family: 'Source Sans Pro', sans-serif;
-	}
-	
-	form input:hover{
-		border: 1px solid rgb(136, 136, 136);
-	}
-	
-	form textarea{
-		width: 100%;
-		margin: 5px auto;
-		border-radius: 5px;
-		padding: 10px;
-		border: 1px whitesmoke solid;
-		cursor: pointer;
-		font-family: 'Source Sans Pro', sans-serif;
 	}
 	
 	form button{
 		width: 100%;
-		margin: 15px auto 40px;
-		background-color: #ff5f00;
-		height: 7vh;
-		border-radius: 30px;
-		font-size: 25px;
-		cursor: pointer;
-		color: white;
-		font-family: 'Bebas Neue', cursive;
 	}
 	
 	form button:active{
@@ -504,12 +433,10 @@ footer{
 	}
 
 	footer{
-		display: flex;
 		flex-direction: column;
 	}
 
 	.footer-info{
-		display: flex;
 		flex-direction: column;
 	}
 
@@ -520,12 +447,10 @@ footer{
 	}
 
 	.footer-info-redes{
-		display: flex;
 		justify-content: center;
 	}
 
 	.footer-info-redes img{
-		display: flex;
 		margin: 5px 0 -20px;
 		padding: 5px;
 	}
