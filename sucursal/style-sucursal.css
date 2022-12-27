@@ -234,20 +234,20 @@ footer{
 		width: 100%;
 		height: 10%;
 		left: 0vw;
-		top: 88vh;
+		top: 90vh;
 		border-radius: 0;
 	}
 	
 	.contenedor-text-boton{
 		width: 90%;
-		margin: auto;
+		margin: 12px auto;
 		display: flex;
 		flex-direction: row;
 	}
 	
 	.contenedor-text-boton img{
 		display: flex;
-		margin: 10px auto;
+		margin: auto;
 		width: 28%;
 	}
 
