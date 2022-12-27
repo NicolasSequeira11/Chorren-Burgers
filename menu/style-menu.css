@@ -23,6 +23,47 @@
 	;
 }
 
+.boton-pedido{
+	display: block;
+	position: fixed;
+	background-color:#0dc143;
+	z-index: 2000;
+	width: 30%;
+	height: 13%;
+	left: 90vw;
+	top: 83vh;
+	border-radius: 25px;
+}
+
+.contenedor-text-boton{
+	width: 34%;
+	display: flex;
+}
+
+.contenedor-text-boton img{
+	display: flex;
+	margin: 5px auto;
+	width: 45%;	
+}
+
+.boton-pedido a{
+	text-decoration: none;
+	color: #ffffff;
+	margin: auto;
+	text-align: center;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 15px;
+	animation-name: boton;
+	animation-duration: 1.5s;
+}
+
+@keyframes boton{
+	0%{
+		transform: translate(200px, 0);
+		opacity: 0%;
+	}
+}
+
 header{
 	display: flex;
 	height: 100px;
@@ -360,7 +401,54 @@ footer{
 }
 
 @media screen and (max-width: 600px) {
+
+	.boton-pedido{
+		display: block;
+		background-color:#0dc143;
+		z-index: 2000;
+		width: 100%;
+		height: 10%;
+		left: 0vw;
+		top: 88vh;
+		border-radius: 0;
+	}
 	
+	.contenedor-text-boton{
+		width: 90%;
+		margin: auto;
+		display: flex;
+		flex-direction: row;
+	}
+	
+	.contenedor-text-boton img{
+		display: flex;
+		margin: 10px auto;
+		width: 28%;
+	}
+
+	.contenedor-text-boton h1{
+		width: 100%;
+		margin: auto;
+	}
+	
+	.contenedor-text-boton a{
+		display: flex;
+		width: 50%;
+		text-decoration: none;
+		color: #ffffff;
+		margin: auto;
+		font-family: 'Bebas Neue', cursive;
+		font-size: 20px;
+		animation-name: boton;
+		animation-duration: 1.5s;
+	}
+
+	@keyframes boton{
+		0%{
+			transform: translate(0, 200px);
+			opacity: 0%;
+		}
+	}
 
 	header nav{
 		display: flex;
