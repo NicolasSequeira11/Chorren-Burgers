@@ -626,7 +626,7 @@ $color4: #ff8e4a;
 /* ------------- MENU RESPONSIVE ------------- */
 
 @media screen and (max-width: 600px) {
-	
+
 .sub-nav__links{
         width: 20%;
         display: flex;
@@ -641,10 +641,15 @@ $color4: #ff8e4a;
 
 .menu{
 	
+
 	&__contenedor{
 		width: 50%;
 	}
-	
+
+    &__contenedor__img{
+        width: 50%;
+    }
+
 	&__img{
 		width: 100%;
 	}

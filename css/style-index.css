@@ -893,6 +893,9 @@
   .menu__contenedor {
     width: 50%;
   }
+  .menu__contenedor__img {
+    width: 50%;
+  }
   .menu__img {
     width: 100%;
   }
