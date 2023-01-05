@@ -1,11 +1,11 @@
-$color1: #0dc143;
-$color2: #ffffff;
+$color-boton1: #0dc143;
+$color-boton2: #ffffff;
 
 .boton{
 	
     display: block;
 	position: fixed;
-	background-color:$color1;
+	background-color:$color-boton1;
 	z-index: 2000;
 	width: 30%;
 	height: 13%;
@@ -45,7 +45,7 @@ $color2: #ffffff;
 
         &__texto{
             text-decoration: none;
-            color: $color2;
+            color: $color-boton2;
             margin: auto;
             text-align: center;
             font-family: 'Bebas Neue', cursive;
@@ -68,15 +68,15 @@ $color2: #ffffff;
 
         @keyframes texto-boton{
             0%{
-                color: $color1;
+                color: $color-boton1;
                 opacity: 100%;
             }
             50%{
-                color: $color2;
+                color: $color-boton2;
                 opacity: 20%;
             }
             100%{
-                color: $color1;
+                color: $color-boton1;
                 opacity: 100%;
             }
         }

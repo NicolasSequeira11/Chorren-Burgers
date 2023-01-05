@@ -3,9 +3,9 @@ $color2: #000000;
 $color3: #ffffff;
 $color4: #ff8e4a;
 
-@use 'header';
-@use 'footer';
-@use 'boton';
+@import 'header';
+@import 'footer';
+@import 'boton';
 
 * {
 	padding: 0;
