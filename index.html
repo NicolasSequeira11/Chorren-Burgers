@@ -15,84 +15,86 @@
 	<link rel="stylesheet" type="text/css" href="css/style-index.css">
 	<link rel="shortcut icon" href="logochorren.ico">
 </head>
-<body>
+<body id="body">
 	
 	<section id="boton">
-	<div class="boton-pedido">
-		<div class="contenedor-text-boton"><a href="https://wa.me/59899043084?"><img src="icon/wpp-boton.png" alt=""><h1>PEDÍ AHORA</h1></a></div>
+	<div class="boton">
+		<div class="boton__contenedor"><a class="boton__texto" href="https://wa.me/59899043084?"><img class="boton__img" src="icon/wpp-boton.png" alt=""><h1 class="boton__h1">PEDÍ AHORA</h1></a></div>
 	</div>
 	</section>
 
-	<header>
-		<nav>
-			<div class="div-logo"><a href="index.html" class="logo"><img src="logopng.png" alt=""></a></div>
-				<ul class="enlaces-menu">
-					<li><a href="index.html">Inicio</a></li>
-					<li><a href="menu.html">Menú</a></li>
-					<li><a href="sucursal.html">Sucursal</a></li>
-					<li><a href="promo.html">Promociones</a></li>
-					<li><a href="contacto.html">Contacto</a></li>
+	<header id="nav">
+		<nav class="nav">
+		<div class="nav-bar__contenedor">
+			<div class="logo"><a href="index.html" class="logo__link"><img src="logopng.png" class="logo__img" alt=""></a></div>
+			<button class="ham" type="button">
+				<span class="br1"></span>
+				<span class="br2"></span>
+				<span class="br3"></span>
+			</button>
+		</div>
+				<ul class="nav__links">
+					<li class="nav__link"><a class="nav__link__texto" href="index.html">Inicio</a></li>
+					<li class="nav__link"><a class="nav__link__texto" href="menu.html">Menú</a></li>
+					<li class="nav__link"><a class="nav__link__texto" href="sucursal.html">Sucursal</a></li>
+					<li class="nav__link"><a class="nav__link__texto" href="promo.html">Promociones</a></li>
+					<li class="nav__link"><a class="nav__link__texto" href="contacto.html">Contacto</a></li>
 				</ul>
-				<button class="ham" type="button">
-					<span class="br1"></span>
-					<span class="br2"></span>
-					<span class="br3"></span>
-				</button>
 		</nav>
 	</header>
 	<script src="menu.js"></script>
 
-	<main id="main-index">
+	<main id="main">
 		<section id="img-index">
-			<div class="img-home"><img src="backgroundhome.png" alt=""></div>
+			<div class="img-index"><img src="backgroundhome.png" class="img-index__img" alt=""></div>
 		</section>
 
-		<section id="menu-text-index">
-			<div class="cont-dest">
-				<div class="cont-dest-text">
-					<h1>Destacados</h1>
-					<a href="menu.html"><p>Ver todo</p></a>
+		<section id="destacado-texto">
+			<div class="contenido-destacado">
+				<div class="contenido-destacado__contenedor">
+					<h1 class="contenido-destacado__texto1">Destacados</h1>
+					<a class="contenido-destacado__link" href="menu.html"><p class="contenido-destacado__texto2">Ver todo</p></a>
 				</div>
 			</div>		
 		</section>
 
-		<section id="menu-index">
-			<div class="cont-dest-img">
-					<div><img src="menu/menu/clasica.png" alt=""></div>
-					<div><img src="menu/menu/bigchorren.png" alt=""></div>
-					<div><img src="menu/menu/chorrin pan.png" alt=""></div>
+		<section id="destacado-img">
+			<div class="contenido-destacado-img">
+					<div class="contenido-destacado-img__contenedor"><img src="menu/menu/clasica.png" class="contenido-destacado-img__img" alt=""></div>
+					<div class="contenido-destacado-img__contenedor"><img src="menu/menu/bigchorren.png" class="contenido-destacado-img__img" alt=""></div>
+					<div class="contenido-destacado-img__contenedor"><img src="menu/menu/chorrin pan.png" class="contenido-destacado-img__img" alt=""></div>
 			</div>
 		</section>
 
-		<section id="promo-text-index">
-			<div class="cont-promo">
-				<div class="cont-promo-text">
-					<h1>Promociones</h1>
-					<a href="promo.html"><p>Ver todo</p></a>
+		<section id="destacado-texto">
+			<div class="contenido-destacado">
+				<div class="contenido-destacado__contenedor">
+					<h1 class="contenido-destacado__texto1">Promociones</h1>
+					<a class="contenido-destacado__link" href="promo.html"><p class="contenido-destacado__texto2">Ver todo</p></a>
 				</div>
 			</div>
 		</section>
 
-		<section id="promo-index">	
-			<div class="cont-promo-img">
-					<div><img src="promo/crunchybbqx2.png" alt=""></div>
-					<div><img src="promo/clasicax2.png" alt=""></div>
-					<div><img src="promo/americanbbqx2.png" alt=""></div>
+		<section id="destacado-img">	
+			<div class="contenido-destacado-img">
+					<div class="contenido-destacado-img__contenedor"><img src="promo/crunchybbqx2.png" class="contenido-destacado-img__img" alt=""></div>
+					<div class="contenido-destacado-img__contenedor"><img src="promo/clasicax2.png" class="contenido-destacado-img__img" alt=""></div>
+					<div class="contenido-destacado-img__contenedor"><img src="promo/americanbbqx2.png" class="contenido-destacado-img__img" alt=""></div>
 			</div>
 		</section>
 	</main>
-<footer>
-	<div class="footer-logo">
-		<img src="logopng.png" alt="">
+<footer id="footer" class="footer">
+	<div class="footer__logo-contenedor">
+		<img class="footer__logo-img" src="logopng.png" alt="">
 	</div>
 		<div class="footer-info">
-			<div class="footer-info-redes">
-				<a href="https://www.instagram.com/chorrenburgers/" target="_blank"><img src="icon/icon-instagram.png" alt=""></a>
-				<a href="https://wa.me/59899043084?" target="_blank"><img src="icon/icon-whatsapp.png" alt=""></a>
-				<a href="https://www.facebook.com/profile.php?id=100065198092474" target="_blank"><img src="icon/icon-facebook.png" alt=""></a>
-				<a href="https://www.tiktok.com/@chorrennburgers" target="_blank"><img src="icon/icon-tiktok.png" alt=""></a>
+			<div class="footer-info__contenedor">
+				<a href="https://www.instagram.com/chorrenburgers/" target="_blank"><img class="footer-info__img" src="icon/icon-instagram.png" alt=""></a>
+				<a href="https://wa.me/59899043084?" target="_blank"><img class="footer-info__img" src="icon/icon-whatsapp.png" alt=""></a>
+				<a href="https://www.facebook.com/profile.php?id=100065198092474" target="_blank"><img class="footer-info__img" src="icon/icon-facebook.png" alt=""></a>
+				<a href="https://www.tiktok.com/@chorrennburgers" target="_blank"><img class="footer-info__img" src="icon/icon-tiktok.png" alt=""></a>
 			</div>
-			<p>Copyright © 2022 Chorren Burger | Powered by Nicolas Sequeira</p>
+			<p class="footer-info__texto">Copyright © 2022 Chorren Burger | Powered by Nicolas Sequeira</p>
 		</div>
 </footer>
 </body>

@@ -9,31 +9,31 @@
 		  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dela+Gothic+One&display=swap" rel="stylesheet">
 	<title>Menú</title>
-	<link rel="stylesheet" type="text/css" href="css/style-menu.css">
+	<link rel="stylesheet" type="text/css" href="css/style-index.css">
 	<link rel="shortcut icon" href="logochorren.ico">
 </head>
 <body>
 
-	<section id="boton">
-	<div class="boton-pedido">
-		<div class="contenedor-text-boton"><a href="https://wa.me/59899043084?"><img src="icon/icon/wpp-boton.png" alt=""><h1>PEDÍ AHORA</h1></a></div>
-	</div>
-	</section>
+		<section id="boton">
+			<div class="boton">
+				<div class="boton__contenedor"><a class="boton__texto" href="https://wa.me/59899043084?"><img class="boton__img" src="icon/wpp-boton.png" alt=""><h1>PEDÍ AHORA</h1></a></div>
+			</div>
+		</section>
 
-		<header>
-			<nav>
-				<div class="div-logo"><a href="index.html" class="logo"><img src="logopng.png" alt=""></a></div>
-					<ul class="enlaces-menu">
-						<li><a href="index.html">Inicio</a></li>
-						<li><a href="menu.html">Menú</a></li>
-						<li><a href="sucursal.html">Sucursal</a></li>
-						<li><a href="promo.html">Promociones</a></li>
-						<li><a href="contacto.html">Contacto</a></li>
+		<header id="nav">
+			<nav class="nav">
+				<div class="logo"><a href="index.html" class="logo__link"><img src="logopng.png" class="logo__img" alt=""></a></div>
+					<ul class="nav__links">
+						<li class="nav__link"><a class="nav__link__texto" href="index.html">Inicio</a></li>
+						<li class="nav__link"><a class="nav__link__texto" href="menu.html">Menú</a></li>
+						<li class="nav__link"><a class="nav__link__texto" href="sucursal.html">Sucursal</a></li>
+						<li class="nav__link"><a class="nav__link__texto" href="promo.html">Promociones</a></li>
+						<li class="nav__link"><a class="nav__link__texto" href="contacto.html">Contacto</a></li>
 					</ul>
 					<button class="ham" type="button">
-						<span class="br1"></span>
-						<span class="br2"></span>
-						<span class="br3"></span>
+						<span class="ham__br ham__br--1"></span>
+						<span class="ham__br ham__br--2"></span>
+						<span class="ham__br ham__br--3"></span>
 					</button>
 			</nav>
 		</header>
@@ -42,11 +42,12 @@
 		<main id="main-menu">
 
 			<section id="sub-nav">
-				<div class="menu">
-					<ul>
-						<li><a href="#hamburguesas">Hamburguesas</a></li>
-						<li><a href="#bebidas">Bebidas</a></li>
-						<li><a href="#postres">Postres</a></li>
+				<div class="sub-nav">
+					<ul class="sub-nav__links">
+						<li class="sub-nav__link"><a class="sub-nav__link__texto" href="#hamburguesas">Hamburguesas</a></li>
+						<li class="sub-nav__link"><a class="sub-nav__link__texto" href="#bebidas">Bebidas</a></li>
+						<li class="sub-nav__link"><a class="sub-nav__link__texto" href="#cervezas">Cervezas</a></li>
+						<li class="sub-nav__link"><a class="sub-nav__link__texto" href="#postres">Postres</a></li>
 					</ul>
 				</div>
 			</section>
@@ -57,22 +58,22 @@
 
 			<section id="menu">
 				<section>
-				<div id="hamburguesas" class="menu-img">
-					<div><img src="menu/menupng/chorren-doble.png" alt=""><h1>Chorren Doble <br> $410</h1> <p>X2 Carne 180G / X4 Cheddar / Panceta / Salsa Chorren / Cheese Bun / Papas fritas crinkle</p> </div>
-					<div><img src="menu/menupng/crunchybbq.png" alt=""><h1>Crunchy BBQ <br> $380</h1> <p>Cheese Bun / Carne premium 180G / Panceta / Papas pay / x2 Queso cheddar / Salsa barbacoa / Papas fritas crinkle</p> </div>
-					<div><img src="menu/menupng/chikn-chorren.png" alt=""><h1>Chik'n Chorren <br> $390</h1> <p>Cheese Bun / Suprema a la parrilla / Lechuga / Tomate / Cebolla morada / Queso cheddar / Mostaza dijon (opcional) / Papas fritas crinkle</p> </div>
-					<div><img src="menu/menupng/american-bbq.png" alt=""><h1>American BBQ <br> $390</h1> <p>Cheese bun / Carne premium 180g / x2 Cheddar / Cebolla crispy / Panceta Ahumada / Huevo a la plancha / Salsa BBQ</p> </div>
-					<div><img src="menu/menupng/oklahoma.png" alt=""><h1>Oklahoma <br> $390</h1> <p>Pan clásico / Carne premium 180g / Cheddar / Cebolla caramelizada / Salsa estilo chipotle</p> </div>
+				<div id="hamburguesas" class="menu">
+					<div class="menu__contenedor__img"><img class="menu__img" src="menu/menupng/chorren-doble.png" alt=""><h1 class="menu__img__texto">Chorren Doble <br> $410</h1> <p class="menu__img__texto__descripcion">X2 Carne 180G / X4 Cheddar / Panceta / Salsa Chorren / Cheese Bun / Papas fritas crinkle</p> </div>
+					<div class="menu__contenedor__img"><img class="menu__img" src="menu/menupng/chikn-chorren.png" alt=""><h1 class="menu__img__texto">Chik'n Chorren <br> $390</h1> <p class="menu__img__texto__descripcion">Cheese Bun / Suprema a la parrilla / Lechuga / Tomate / Cebolla morada / Queso cheddar / Mostaza dijon (opcional) / Papas fritas crinkle</p> </div>
+					<div class="menu__contenedor__img"><img class="menu__img" src="menu/menupng/american-bbq.png" alt=""><h1 class="menu__img__texto">American BBQ <br> $390</h1> <p class="menu__img__texto__descripcion">Cheese bun / Carne premium 180g / x2 Cheddar / Cebolla crispy / Panceta Ahumada / Huevo a la plancha / Salsa BBQ</p> </div>
+					<div class="menu__contenedor__img"><img class="menu__img" src="menu/menupng/oklahoma.png" alt=""><h1 class="menu__img__texto">Oklahoma <br> $390</h1> <p class="menu__img__texto__descripcion">Pan clásico / Carne premium 180g / Cheddar / Cebolla caramelizada / Salsa estilo chipotle</p> </div>
+					<div class="menu__contenedor__img"><img class="menu__img" src="menu/menupng/crunchybbq.png" alt=""><h1 class="menu__img__texto">Crunchy BBQ <br> $380</h1> <p class="menu__img__texto__descripcion">Cheese Bun / Carne premium 180G / Panceta / Papas pay / x2 Queso cheddar / Salsa barbacoa / Papas fritas crinkle</p> </div>
 					
-					<div><img src="menu/menupng/donut.png" alt=""><h1>Donut <br> $410</h1> <p> 2 donuts glaseadas / 180g de carne / x3 cheddar / x2 panceta / Papas fritas crinkle</p> </div>
-					<div><img src="menu/menupng/gaucho.png" alt=""><h1>Gaucho <br> $380</h1> <p>Carne premium 180g / Mozzarella / Salsa Criolla / Salsa gaucho</p> </div>
-					<div><img src="menu/menupng/veggie.png" alt=""><h1>Veggie <br> $380</h1> <p>Cheese Bun / Medallon de lentejas / Cebolla caramelizada / x2 Cheddar / Salsa Chorren / Huevo a la plancha / Tomate / Lechuga / Papas fritas crinkle</p> </div>
-					<div><img src="menu/menupng/crispy-cheese.png" alt=""><h1>Crispy Cheese <br> $410</h1> <p>Cheese Bun / Carne premium / Medallon crispy de queso dambo / Panceta / Salsa chorren / Lechuga / Tomate / Papas fritas crinkle</p> </div>
+					<div class="menu__contenedor__img"><img class="menu__img" src="menu/menupng/donut.png" alt=""><h1 class="menu__img__texto">Donut <br> $410</h1> <p class="menu__img__texto__descripcion"> 2 donuts glaseadas / 180g de carne / x3 cheddar / x2 panceta / Papas fritas crinkle</p> </div>
+					<div class="menu__contenedor__img"><img class="menu__img" src="menu/menupng/gaucho.png" alt=""><h1 class="menu__img__texto">Gaucho <br> $380</h1> <p class="menu__img__texto__descripcion">Carne premium 180g / Mozzarella / Salsa Criolla / Salsa gaucho</p> </div>
+					<div class="menu__contenedor__img"><img class="menu__img" src="menu/menupng/veggie.png" alt=""><h1 class="menu__img__texto">Veggie <br> $380</h1> <p class="menu__img__texto__descripcion">Cheese Bun / Medallon de lentejas / Cebolla caramelizada / x2 Cheddar / Salsa Chorren / Huevo a la plancha / Tomate / Lechuga / Papas fritas crinkle</p> </div>
+					<div class="menu__contenedor__img"><img class="menu__img" src="menu/menupng/crispy-cheese.png" alt=""><h1 class="menu__img__texto">Crispy Cheese <br> $410</h1> <p class="menu__img__texto__descripcion">Cheese Bun / Carne premium / Medallon crispy de queso dambo / Panceta / Salsa chorren / Lechuga / Tomate / Papas fritas crinkle</p> </div>
 					
-					<div><img src="menu/menupng/big-chorren.png" alt=""><h1>Big Chorren <br> $380</h1> <p>Pan de papa / Carne premium 180G / Lechuga / Pepinillo / Cebolla Crispy / x2 Cheddar / Salsa Big / Papas fritas crinkle</p> </div>
-					<div><img src="menu/menupng/chorren-simple.png" alt=""><h1>Chorren Simple <br> $360</h1> <p>X Carne 180G / X2 Cheddar / Panceta / Salsa Chorren / Cheese Bun / Papas fritas crinkle</p> </div>
-					<div><img src="menu/menupng/chorrin-pan.png" alt=""><h1>Chorrin Pan <br> $330</h1> <p>Cheese bun / Chorizo extra cattivelli / x2 Queso cheddar / Salsa chorren / Lechuga / Tomate / Papas fritas crinkle</p> </div>
-					<div><img src="menu/menupng/clasica.png" alt=""><h1>Clasica <br> $390</h1> <p>Pan de queso / Carne premium 180g / Queso cheddar / Tomate / Lechuga / Mayonesa / Huevo a la plancha</p> </div>
+					<div class="menu__contenedor__img"><img class="menu__img" src="menu/menupng/big-chorren.png" alt=""><h1 class="menu__img__texto">Big Chorren <br> $380</h1> <p class="menu__img__texto__descripcion">Pan de papa / Carne premium 180G / Lechuga / Pepinillo / Cebolla Crispy / x2 Cheddar / Salsa Big / Papas fritas crinkle</p> </div>
+					<div class="menu__contenedor__img"><img class="menu__img" src="menu/menupng/chorren-simple.png" alt=""><h1 class="menu__img__texto">Chorren Simple <br> $360</h1> <p class="menu__img__texto__descripcion">X Carne 180G / X2 Cheddar / Panceta / Salsa Chorren / Cheese Bun / Papas fritas crinkle</p> </div>
+					<div class="menu__contenedor__img"><img class="menu__img" src="menu/menupng/chorrin-pan.png" alt=""><h1 class="menu__img__texto">Chorrin Pan <br> $330</h1> <p class="menu__img__texto__descripcion">Cheese bun / Chorizo extra cattivelli / x2 Queso cheddar / Salsa chorren / Lechuga / Tomate / Papas fritas crinkle</p> </div>
+					<div class="menu__contenedor__img"><img class="menu__img" src="menu/menupng/clasica.png" alt=""><h1 class="menu__img__texto">Clasica <br> $390</h1> <p class="menu__img__texto__descripcion">Pan de queso / Carne premium 180g / Queso cheddar / Tomate / Lechuga / Mayonesa / Huevo a la plancha</p> </div>
 				</div>
 				</section>
 			</section>
@@ -83,19 +84,35 @@
 
 			<section id="menu-bebidas">
 				<section>
-					<div id="bebidas" class="menu-img">
-						<div><img src="menu/bebidas/latapepsi.png" alt=""><h1>Pepsi 250ml <br> $55</h1></div>
-						<div><img src="menu/bebidas/pepsi500.png" alt=""><h1>Pepsi 500ml <br> $75</h1></div>
-						<div><img src="menu/bebidas/pepsi15.png" alt=""><h1>Pepsi 1.5L <br> $140</h1></div>
-						<div><img src="menu/bebidas/stella.png" alt=""><h1>Stella Artois 1L <br> $220</h1></div>
+					<div id="bebidas" class="menu">
+						<div class="menu__contenedor__img"><img class="menu__img" src="menu/bebidas/latapepsi.png" alt=""><h1 class="menu__img__texto">Pepsi 250ml <br> $55</h1></div>
+						<div class="menu__contenedor__img"><img class="menu__img" src="menu/bebidas/pepsi500.png" alt=""><h1 class="menu__img__texto">Pepsi 500ml <br> $75</h1></div>
+						<div class="menu__contenedor__img"><img class="menu__img" src="menu/bebidas/pepsi15.png" alt=""><h1 class="menu__img__texto">Pepsi 1.5L <br> $140</h1></div>
 					
-						<div><img src="menu/bebidas/mirinda500.png" alt=""><h1>Mirinda 500ml <br> $75</h1></div>
-						<div><img src="menu/bebidas/mirinda15.png" alt=""><h1>Mirinda 1.5L <br> $140</h1></div>
-						<div><img src="menu/bebidas/7up500.png" alt=""><h1>7up 500ml <br> $75</h1></div>
+						<div class="menu__contenedor__img"><img class="menu__img" src="menu/bebidas/mirinda500.png" alt=""><h1 class="menu__img__texto">Mirinda 500ml <br> $75</h1></div>
+						<div class="menu__contenedor__img"><img class="menu__img" src="menu/bebidas/mirinda15.png" alt=""><h1 class="menu__img__texto">Mirinda 1.5L <br> $140</h1></div>
+						<div class="menu__contenedor__img"><img class="menu__img" src="menu/bebidas/7up500.png" alt=""><h1 class="menu__img__texto">7up 500ml <br> $75</h1></div>
 				
-						<div><img src="menu/bebidas/7up15.png" alt=""><h1>7up 1.5L <br> $140</h1></div>
-						<div><img src="menu/bebidas/paso500.png" alt=""><h1>Paso de los toros 500ml <br> $75</h1></div>
-						<div><img src="menu/bebidas/paso15.png" alt=""><h1>Paso de los toros 1.5L <br> $140</h1></div>
+						<div class="menu__contenedor__img"><img class="menu__img" src="menu/bebidas/7up15.png" alt=""><h1 class="menu__img__texto">7up 1.5L <br> $140</h1></div>
+						<div class="menu__contenedor__img"><img class="menu__img" src="menu/bebidas/paso500.png" alt=""><h1 class="menu__img__texto">Paso de los toros 500ml <br> $75</h1></div>
+						<div class="menu__contenedor__img"><img class="menu__img" src="menu/bebidas/paso15.png" alt=""><h1 class="menu__img__texto">Paso de los toros 1.5L <br> $140</h1></div>
+				</section>
+			</section>
+
+			<section id="title-cervezas">
+				<h1 class="title-menu">Cervezas</h1>
+			</section>
+
+			<section id="menu-cervezas">
+				<section>
+					<div id="cervezas" class="menu">
+						<div class="menu__contenedor__img"><img class="menu__img" src="menu/bebidas/zillertal.png" alt=""><h1 class="menu__img__texto">Zillertal 1L <br> $270</h1></div>
+						<div class="menu__contenedor__img"><img class="menu__img" src="menu/bebidas/stella.png" alt=""><h1 class="menu__img__texto">Stella Artois 1L <br> $270</h1></div>
+						<div class="menu__contenedor__img"><img class="menu__img" src="menu/bebidas/corona.png" alt=""><h1 class="menu__img__texto">Corona 330ml <br> $140</h1></div>
+						
+						<div class="menu__contenedor__img"><img class="menu__img" src="menu/bebidas/patricia.png" alt=""><h1 class="menu__img__texto">Patricia 1L <br> $250</h1></div>
+						<div class="menu__contenedor__img"><img class="menu__img" src="menu/bebidas/patagonia-amber.png" alt=""><h1 class="menu__img__texto">Patagonia Amber 730ml <br> $280</h1></div>
+						<div class="menu__contenedor__img"><img class="menu__img" src="menu/bebidas/patagonia-24.png" alt=""><h1 class="menu__img__texto">Patagonia 24.7 730ml <br> $280</h1></div>
 				</section>
 			</section>
 
@@ -105,25 +122,25 @@
 
 			<section id="menu-postres">
 				<section>
-					<div id="postres" class="menu-img">
-					<div><img src="menu/postres/franui1.png" alt=""><h1>Chocolate negro<br>+ Chocolate blanco <br>$290</h1></div>
-					<div><img src="menu/postres/franui2.png" alt=""><h1>Chocolate con leche<br>+ Chocolate blanco <br>$290</h1></div>
+					<div id="postres" class="menu">
+					<div class="menu__contenedor__img"><img class="menu__img" src="menu/postres/franui1.png" alt=""><h1 class="menu__img__texto">Chocolate negro<br>+ Chocolate blanco <br>$290</h1></div>
+					<div class="menu__contenedor__img"><img class="menu__img" src="menu/postres/franui2.png" alt=""><h1 class="menu__img__texto">Chocolate con leche<br>+ Chocolate blanco <br>$290</h1></div>
 				</section>
 			</section>
 		</main>
 		
-		<footer>
-			<div class="footer-logo">
-				<img src="logopng.png" alt="">
+		<footer id="footer" class="footer">
+			<div class="footer__logo-contenedor">
+				<img class="footer__logo-img" src="logopng.png" alt="">
 			</div>
 				<div class="footer-info">
-					<div class="footer-info-redes">
-						<a href="https://www.instagram.com/chorrenburgers/" target="_blank"><img src="icon/icon-instagram.png" alt=""></a>
-						<a href="https://wa.me/59899043084?" target="_blank"><img src="icon/icon-whatsapp.png" alt=""></a>
-						<a href="https://www.facebook.com/profile.php?id=100065198092474" target="_blank"><img src="icon/icon-facebook.png" alt=""></a>
-						<a href="https://www.tiktok.com/@chorrennburgers" target="_blank"><img src="icon/icon-tiktok.png" alt=""></a>
+					<div class="footer-info__contenedor">
+						<a href="https://www.instagram.com/chorrenburgers/" target="_blank"><img class="footer-info__img" src="icon/icon-instagram.png" alt=""></a>
+						<a href="https://wa.me/59899043084?" target="_blank"><img class="footer-info__img" src="icon/icon-whatsapp.png" alt=""></a>
+						<a href="https://www.facebook.com/profile.php?id=100065198092474" target="_blank"><img class="footer-info__img" src="icon/icon-facebook.png" alt=""></a>
+						<a href="https://www.tiktok.com/@chorrennburgers" target="_blank"><img class="footer-info__img" src="icon/icon-tiktok.png" alt=""></a>
 					</div>
-					<p>Copyright © 2022 Chorren Burger | Powered by Nicolas Sequeira</p>
+					<p class="footer-info__texto">Copyright © 2022 Chorren Burger | Powered by Nicolas Sequeira</p>
 				</div>
 		</footer>
 	</main>
