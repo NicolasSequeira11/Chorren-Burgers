@@ -1,11 +1,10 @@
-$color-boton1: #0dc143;
-$color-boton2: #ffffff;
+@use '_commons' as c;
 
 .boton{
 	
     display: block;
 	position: fixed;
-	background-color:$color-boton1;
+	background-color:map-get(c.$color-btnwpp,"color1");
 	z-index: 2000;
 	width: 30%;
 	height: 13%;
@@ -45,7 +44,7 @@ $color-boton2: #ffffff;
 
         &__texto{
             text-decoration: none;
-            color: $color-boton2;
+            color: map-get(c.$color-btnwpp,"color2");
             margin: auto;
             text-align: center;
             font-family: 'Bebas Neue', cursive;
@@ -68,15 +67,15 @@ $color-boton2: #ffffff;
 
         @keyframes texto-boton{
             0%{
-                color: $color-boton1;
+                color: map-get(c.$color-btnwpp,"color1");
                 opacity: 100%;
             }
             50%{
-                color: $color-boton2;
+                color: map-get(c.$color-btnwpp,"color2");
                 opacity: 20%;
             }
             100%{
-                color: $color-boton1;
+                color: map-get(c.$color-btnwpp,"color1");
                 opacity: 100%;
             }
         }

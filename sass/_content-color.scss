@@ -1,0 +1,135 @@
+@use '_commons' as c;
+
+
+/* COLOR INICIO */
+
+.contenido-destacado{
+
+        &__link{
+            color: map-get(c.$color-inicio,"color4");
+        }
+
+        &__texto2:hover{
+            text-decoration-color: map-get(c.$color-inicio,"color1");
+        }
+
+}
+
+.contenido-destacado-img{
+
+        &__img:hover{
+            box-shadow: 0px 0px 2px 0px map-get(c.$color-inicio,"color2");
+        }
+
+}
+
+.cont-promo-text{
+
+        &__a{
+            color: map-get(c.$color-inicio,"color4");
+        }
+}
+
+.cont-promo-img{
+
+        &__img:hover{
+            box-shadow: 0px 0px 2px 0px map-get(c.$color-inicio,"color2");
+        }
+}
+
+/* COLOR MENU */
+
+.sub-nav{
+ 
+    background-color: map-get(c.$color-menu,"color1");
+
+        &__link{
+            font-size: 20px map-get(c.$color-menu,"color3");
+        }
+
+        &__link__texto{
+            color: map-get(c.$color-menu,"color3");
+        }
+}
+
+/* COLOR SUCURSAL */
+
+.sucursal{
+
+    background-color: map-get(c.$color-sucursal,"color3");
+
+        &__titulo{
+            color: map-get(c.$color-sucursal,"color1");
+        }
+}
+
+/* COLOR PROMOCIONES */
+
+/* COLOR CONTACTO */
+
+.form{
+
+    background-color: map-get(c.$color-contacto,"color3");
+
+        &__titulo{
+            color: map-get(c.$color-contacto,"color1");
+        }
+}
+
+.form__contenedor{
+
+        &__titulo{
+            color: map-get(c.$color-contacto,"color1");
+        }
+
+        &__input{
+            border: 1px map-get(c.$color-contacto,"color3") solid;
+        }
+
+        &__input:hover{
+            border: 1px solid map-get(c.$color-contacto,"color5");
+        }
+
+        &__textarea{
+            border: 1px map-get(c.$color-contacto,"color3") solid;
+        }
+
+        &__boton{
+            background-color: map-get(c.$color-contacto,"color1");
+            color: map-get(c.$color-contacto,"color3");
+        }
+
+        &__boton:active{
+            background-color: map-get(c.$color-contacto,"color3");
+            color: map-get(c.$color-contacto,"color1");
+        }
+}
+
+/* COLOR RESPONSIVE */
+
+/* COLOR SUCURSAL RESPONSIVE */
+
+@media screen and (max-width: 600px) {
+    
+    .sucursal{
+        background-color: map-get(c.$color-sucursal,"color3");
+        
+            &__titulo{
+                color: map-get(c.$color-sucursal,"color1");
+            }
+        }
+    }
+
+
+/* COLOR CONTACTO RESPONSIVE */
+
+@media screen and (max-width: 600px) {
+        
+    .form{
+
+        .form__contenedor__boton:active{
+            background-color: map-get(c.$color-contacto,"color3");
+            color: map-get(c.$color-contacto,"color1");
+        }
+    }
+}
