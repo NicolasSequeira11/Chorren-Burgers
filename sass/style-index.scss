@@ -5,7 +5,6 @@ $color4: #ff8e4a;
 
 @use '_header';
 @use '_footer';
-@use '_boton';
 @use '_content-color';
 
 * {
@@ -431,7 +430,7 @@ $color4: #ff8e4a;
             position: absolute;
             text-align:start;
             justify-content: center;
-            width: 250px;
+            width: 15em;
             opacity: 0%;
             height: 120px;
             font-family: 'Source Sans Pro', sans-serif;
@@ -621,10 +620,25 @@ $color4: #ff8e4a;
             flex-wrap: wrap;
         }
     }
+
+@media screen and (min-width:601px) and (max-width: 1100px) {
+        
+    .img-index{
+        width: 100%;
+        height: 60vh;
+            
+            &__img{
+                width: 100%;
+                height: 60vh;
+                margin-top: 35px;
+            }
+    }
+    
+}
     
     /* ------------- MENU RESPONSIVE ------------- */
     
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 650px) {
     
     .sub-nav__links{
             width: 20%;
@@ -643,6 +657,7 @@ $color4: #ff8e4a;
     
         &__contenedor{
             width: 50%;
+            margin-right: 20px;
         }
     
         &__contenedor__img{
@@ -658,11 +673,52 @@ $color4: #ff8e4a;
         }
     
         &__img__texto__descripcion{
+            width: 100px;
             font-size: 11px;
         }
     }
     }
     
+    @media screen and (min-width:651px) and (max-width: 1250px) {
+        
+        .sub-nav__links{
+            width: 20%;
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            font-size: 15px;
+        }
+    
+        .title-menu{
+            justify-content: center;
+        }
+    
+    .menu{
+        
+    
+        &__contenedor{
+            width: 50%;
+            margin-right: 20px;
+        }
+    
+        &__contenedor__img{
+            width: 30%;
+        }
+    
+        &__img{
+            width: 100%;
+        }
+    
+        &__img__texto{
+            font-size: 20px;
+        }
+    
+        &__img__texto__descripcion{
+            width: 100px;
+            font-size: 15px;
+        }
+    }
+    }
     /* ------------- SUCURSAL RESPONSIVE ------------- */
     
     @media screen and (max-width: 600px) {
@@ -729,6 +785,49 @@ $color4: #ff8e4a;
             }
         }
     }
+
+    @media screen and (min-width:601px) and (max-width: 1200px) {
+    
+        .promo-titulo{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin: auto;
+            font-family: 'Bebas Neue', cursive;
+        
+                &__texto{
+                    display: flex;
+                    width: 100%;
+                    margin: auto;
+                    padding: 130px 0 0 0;
+                    text-align: center;
+                    justify-content: center;
+                }
+        }
+        
+        .promo{
+            display: flex;
+            width: 80%;
+            margin: auto;
+            flex-wrap: wrap;
+        
+                &__contenedor{
+                    display: flex;
+                    width: 50%;
+                    margin: auto;	
+                    flex-direction: column;
+                    padding: 15px;
+                }
+                
+                &__img{
+                    display: flex;
+                    width: 100%;
+                    margin: auto;
+                    object-fit: cover;
+                    border-radius: 20px;
+                }
+            }
+        }
     
     
     /* ------------- CONTACTO RESPONSIVE ------------- */

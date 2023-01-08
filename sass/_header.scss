@@ -27,10 +27,6 @@
     }
 }
 
-.nav-bar__contenedor{
-    display: flex;
-}
-
 .ham{
     display: none;
     position: absolute;
@@ -62,7 +58,7 @@
         &{
             display: flex;
             width: 100%;
-            justify-content:space-around;
+            justify-content:space-evenly;
         }
 
         &__links{
@@ -92,7 +88,7 @@
         }
         
         &__link:hover{
-            border-radius: 35px;
+            border-radius: 15px;
             padding: 1px;
             background-color: map-get(c.$color-header,"color1");
             transition-duration: 0.9s;
@@ -102,7 +98,7 @@
             text-decoration: none;
             color: map-get(c.$color-header,"color3");
             padding: 10px;
-            border-radius: 25px;
+            border-radius: 15px;
             font-family: 'Bebas Neue', cursive;
         }
         
@@ -111,22 +107,56 @@
             background-color: map-get(c.$color-header,"color4");
             color: map-get(c.$color-header,"color1");
             padding: 10px;
-            border-radius: 35px;
+            border-radius: 15px;
         }
 
 }
 
-@media screen and (max-width: 850px) {
+.pedido{
+    display: flex;
+    margin: auto 20px;
+    justify-content: center;
+    color: map-get(c.$color-header,"color3");
+    background-color: map-get(c.$color-header,"color5");
+    padding: 1px;
+    font-size: 15px;
+    border-radius: 7px;
+    animation-name: boton_pedido;
+    animation-duration: 1s;
 
-    .nav-bar__contenedor{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-        margin: auto;
-        justify-content: space-between;
-    }
+        @keyframes boton_pedido{
+            0%{
+                opacity: 0%;
+            }
+            100%{
+                opacity: 100%;
+            }
+        }
+        
+        &:hover{
+            padding: 1px;
+            background-color: map-get(c.$color-header,"color3");
+            transition-duration: 0.9s;
+        }
+
+        &__texto{
+            text-decoration: none;
+            color: map-get(c.$color-header,"color3");
+            padding: 10px;
+            font-family: 'Bebas Neue', cursive;
+        }
+
+        &__texto:hover{
+            color: map-get(c.$color-header,"color5");
+        }
+
+        &__contenedor{
+            margin: auto;
+            text-decoration: none;
+        }
+}
+
+@media screen and (max-width: 850px) {
 
     .nav{
 		display: flex;
