@@ -52,6 +52,19 @@
         }
 }
 
+.menu{
+    
+    &__contenedor__descripcion{
+        background-color: map-get(c.$color-inicio,"color3");
+    }
+
+    &__contenedor__img:hover > &__img__texto__descripcion{
+        background-color: map-get(c.$color-inicio,"color3");
+        color: map-get(c.$color-inicio,"color2");
+        
+    }
+}
+
 /* COLOR SUCURSAL */
 
 .sucursal{
