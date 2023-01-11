@@ -224,6 +224,8 @@ $color4: #ff8e4a;
 	"sub_nav sub_nav"
 	"title title"
 	"menu menu"
+    "titlepicada titlepicada"
+    "picada picada"
 	"titlebebidas titlebebidas"
 	"bebidas bebidas"
     "titlecervezas titlecervezas"
@@ -278,6 +280,10 @@ $color4: #ff8e4a;
 	grid-area: title;
 }
 
+#title-picada{
+    grid-area: titlepicada;
+}
+
 #title-bebidas{
 	grid-area: titlebebidas;
 }
@@ -329,6 +335,17 @@ $color4: #ff8e4a;
 	width: 90%;
 	margin: auto;
 	grid-area: menu;
+}
+
+#menu-picada{
+    display: grid;
+	grid-template-columns: 90%;
+	grid-template-rows: auto;
+	gap: 50px;
+	justify-content: center;
+	width: 90%;
+	margin: auto;
+    grid-area: picada;
 }
 
 #menu-bebidas{

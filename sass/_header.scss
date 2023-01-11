@@ -181,22 +181,32 @@
             background-color: map-get(c.$color-header,"color2");
             animation:muestraMenu 350ms ease-in-out both;
             z-index: 2000;
+            border-bottom: 5px solid map-get(c.$color-header,"color1");
         }
 
         &__link{
-            margin: 5px auto;
-            padding: 10px;
+            margin: 15px auto;
+            width: 100%;
         }
 
         &__link__texto{
             font-size: 25px;
+            width: 100%;
+            text-align: center;
         }
 
+        &__link__texto:active{
+            text-decoration: none;
+            text-align: center;
+            width: 100%;
+            background-color: map-get(c.$color-header,"color4");
+            color: map-get(c.$color-header,"color1");
+        }
 }
     .logo{
         height: 100%;
         vertical-align: center;
-        margin: 10px 0 10px 30px;
+        margin: 10px 0;
         width: 21%;
         }
 

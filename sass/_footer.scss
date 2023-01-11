@@ -32,13 +32,13 @@
             margin: auto;
             height: 100%;
             width: 100%;
-            padding-top: 15px;
+            padding-top: 20px;
         }
 
         &__horario__titulo{
             margin: 0;
             font-family: 'Bebas Neue', cursive;
-            font-size: 2.5em;
+            font-size: 2em;
             text-align: center;
             color: map-get(c.$color-footer,"color3");
         }
@@ -47,7 +47,7 @@
             text-align: center;
             margin: auto;
             font-family: 'Bebas Neue', cursive;
-            font-size: 1.2em;
+            font-size: 1.1em;
             color: map-get(c.$color-footer,"color3");
         }
 }
@@ -69,6 +69,7 @@
                 font-size: 15px;
                 text-align: center;
                 color: map-get(c.$color-footer,"color3");
+                font-family: 'Source Sans Pro', sans-serif;
             }
 
             &__texto--2{
@@ -80,6 +81,7 @@
                 font-size: 15px;
                 text-align: center;
                 color: map-get(c.$color-footer,"color3");
+                font-family: 'Source Sans Pro', sans-serif;
             }
 
             &__contenedor{
