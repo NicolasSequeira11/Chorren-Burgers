@@ -96,15 +96,15 @@
         }
 
         &__input{
-            border: 1px map-get(c.$color-contacto,"color3") solid;
+            border: 1px map-get(c.$color-contacto,"color2") solid;
         }
 
         &__input:hover{
-            border: 1px solid map-get(c.$color-contacto,"color5");
+            border: 1px solid map-get(c.$color-contacto,"color1");
         }
 
         &__textarea{
-            border: 1px map-get(c.$color-contacto,"color3") solid;
+            border: 1px map-get(c.$color-contacto,"color2") solid;
         }
 
         &__boton{

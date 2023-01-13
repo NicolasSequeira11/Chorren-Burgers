@@ -180,7 +180,7 @@
   .logo {
     height: 100%;
     vertical-align: center;
-    margin: 10px 0;
+    margin: auto 15px;
     width: 21%;
   }
   .ham__contenedor {
@@ -196,6 +196,14 @@
   .ham span {
     display: flex;
     background-color: #ffffff;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1100px) {
+  .logo {
+    height: 100%;
+    vertical-align: center;
+    margin: auto 0;
+    width: 21%;
   }
 }
 .footer {
@@ -449,13 +457,13 @@
   color: #EC4E0B;
 }
 .form__contenedor__input {
-  border: 1px #ffffff solid;
+  border: 1px #000000 solid;
 }
 .form__contenedor__input:hover {
-  border: 1px solid rgb(136, 136, 136);
+  border: 1px solid #EC4E0B;
 }
 .form__contenedor__textarea {
-  border: 1px #ffffff solid;
+  border: 1px #000000 solid;
 }
 .form__contenedor__boton {
   background-color: #EC4E0B;
@@ -515,11 +523,12 @@
 
 .img-index {
   width: 100%;
-  height: 750px;
+  height: 87vh;
+  margin-bottom: 10%;
 }
 .img-index__img {
   width: 100%;
-  max-height: 750px;
+  height: 100vh;
   object-fit: cover;
   animation-name: img-home;
   animation-duration: 2s;
@@ -704,6 +713,18 @@
 .sub-nav__link__texto {
   text-decoration: none;
   font-family: "Bebas Neue", cursive;
+  align-items: center;
+  margin: auto;
+}
+.sub-nav__link__texto:hover {
+  color: black;
+}
+.sub-nav__link__icon {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  height: 80%;
 }
 
 #title {
@@ -730,7 +751,7 @@
   display: flex;
   width: 80%;
   font-size: 60px;
-  margin: 100px auto 25px;
+  margin: 100px auto 0;
   justify-content: start;
   font-family: "Bebas Neue", cursive;
   animation-name: title-menu;
@@ -742,6 +763,17 @@
   width: 100%;
   margin: auto;
   justify-content: start;
+}
+
+.title-menu__texto {
+  display: flex;
+  width: 80%;
+  font-size: 20px;
+  margin: auto;
+  justify-content: start;
+  font-family: "Bebas Neue", cursive;
+  animation-name: title-menu;
+  animation-duration: 1s;
 }
 
 @keyframes title-menu {
@@ -930,14 +962,14 @@
 }
 .promo__contenedor {
   display: flex;
-  width: 45%;
+  width: 30%;
   margin: auto;
   flex-direction: column;
-  padding: 15px;
+  padding: 15px 0;
 }
 .promo__img {
   display: flex;
-  width: 80%;
+  width: 100%;
   margin: auto;
   object-fit: cover;
   border-radius: 20px;
@@ -1055,6 +1087,9 @@
   .title-menu {
     justify-content: center;
   }
+  .title-menu__texto {
+    justify-content: center;
+  }
   .menu__contenedor {
     width: 50%;
     margin-right: 20px;
@@ -1074,14 +1109,23 @@
   }
 }
 @media screen and (min-width: 651px) and (max-width: 1250px) {
+  .sub-nav {
+    display: flex;
+    flex-direction: column;
+  }
   .sub-nav__links {
     width: 20%;
-    display: flex;
     margin: auto;
     justify-content: center;
     font-size: 15px;
   }
+  .sub-nav__link {
+    width: 100%;
+  }
   .title-menu {
+    justify-content: center;
+  }
+  .title-menu__texto {
     justify-content: center;
   }
   .menu__contenedor {
