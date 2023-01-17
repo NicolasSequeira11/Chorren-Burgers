@@ -41,14 +41,19 @@
 
 .sub-nav{
  
-    background-color: map-get(c.$color-menu,"color1");
+    background-color: map-get(c.$color-menu,"color3");
+    box-shadow: 0 0 5px 0 black;
 
         &__link{
-            font-size: 20px map-get(c.$color-menu,"color3");
+            font-size: 20px;
         }
 
         &__link__texto{
-            color: map-get(c.$color-menu,"color3");
+            color: map-get(c.$color-menu,"color2");
+        }
+
+        &__link__texto:hover{
+            color: map-get(c.$color-menu,"color1");
         }
 }
 

@@ -63,39 +63,34 @@
   margin: auto 20px;
   justify-content: center;
   color: #ffffff;
-  padding: 1px;
   font-size: 20px;
-  border-radius: 15px;
-  animation-name: nav-li;
-  animation-duration: 1s;
-}
-@keyframes nav-li {
-  0% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-.nav__link:hover {
-  border-radius: 15px;
-  padding: 1px;
-  background-color: #EC4E0B;
-  transition-duration: 0.9s;
 }
 .nav__link__texto {
   text-decoration: none;
   color: #ffffff;
+  margin: 5px auto 0;
   padding: 10px;
-  border-radius: 15px;
   font-family: "Bebas Neue", cursive;
 }
-.nav__link__texto:active {
-  text-decoration: none;
-  background-color: #ff8e4a;
-  color: #EC4E0B;
-  padding: 10px;
-  border-radius: 15px;
+.nav__link__texto::after {
+  content: "";
+  display: flex;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #EC4E0B;
+  /*animacion de derecha a izquierda*/
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
+}
+.nav__link__texto:hover::after {
+  /*animacion de derecha a izquierda*/
+  transform-origin: left;
+  transform: scaleX(1);
 }
 
 .pedido {
@@ -108,7 +103,7 @@
   font-size: 15px;
   border-radius: 7px;
   animation-name: boton_pedido;
-  animation-duration: 1s;
+  animation-duration: 0.3s;
 }
 @keyframes boton_pedido {
   0% {
@@ -120,8 +115,8 @@
 }
 .pedido:hover {
   padding: 1px;
-  background-color: #ffffff;
-  transition-duration: 0.9s;
+  box-shadow: 0 0 12px 0 #0dc143;
+  transition-duration: 0.2s;
 }
 .pedido__texto {
   text-decoration: none;
@@ -130,7 +125,7 @@
   font-family: "Bebas Neue", cursive;
 }
 .pedido__texto:hover {
-  color: #0dc143;
+  color: #ffffff;
 }
 .pedido__contenedor {
   margin: auto;
@@ -155,7 +150,7 @@
     margin: auto;
     padding: 22px;
     position: relative;
-    top: 224px;
+    top: 240px;
     background-color: #000000;
     animation: muestraMenu 350ms ease-in-out both;
     z-index: 2000;
@@ -169,13 +164,6 @@
     font-size: 25px;
     width: 100%;
     text-align: center;
-  }
-  .nav__link__texto:active {
-    text-decoration: none;
-    text-align: center;
-    width: 100%;
-    background-color: #ff8e4a;
-    color: #EC4E0B;
   }
   .logo {
     height: 100%;
@@ -216,7 +204,7 @@
 }
 .footer__contenedor {
   display: flex;
-  width: 80%;
+  width: 100%;
 }
 .footer__logo-contenedor {
   display: flex;
@@ -240,7 +228,7 @@
 .footer__horario__titulo {
   margin: 0;
   font-family: "Bebas Neue", cursive;
-  font-size: 2em;
+  font-size: 3em;
   text-align: center;
   color: #ffffff;
 }
@@ -248,7 +236,7 @@
   text-align: center;
   margin: auto;
   font-family: "Bebas Neue", cursive;
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: #ffffff;
 }
 
@@ -327,13 +315,13 @@
     margin: 20px auto 0;
     line-height: 30px;
     justify-content: center;
-    font-size: 17px;
+    font-size: 15px;
   }
   .footer-info__texto--2 {
     margin: 0 auto 20px;
     line-height: 30px;
     justify-content: center;
-    font-size: 17px;
+    font-size: 15px;
   }
   .footer-info__contenedor {
     justify-content: center;
@@ -419,13 +407,17 @@
 
 /* COLOR MENU */
 .sub-nav {
-  background-color: #EC4E0B;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px 0 black;
 }
 .sub-nav__link {
-  font-size: 20px #ffffff;
+  font-size: 20px;
 }
 .sub-nav__link__texto {
-  color: #ffffff;
+  color: #000000;
+}
+.sub-nav__link__texto:hover {
+  color: #EC4E0B;
 }
 
 .menu__contenedor__descripcion {
@@ -502,11 +494,15 @@
   display: grid;
   background-color: #FEFEFE;
   grid-template-columns: 50% 50%;
-  grid-template-areas: "nav nav" "main main" "dest_texto dest_texto" "dest_img dest_img" "footer footer";
+  grid-template-areas: "nav nav" "main main" "local local" "dest_texto dest_texto" "dest_img dest_img" "footer footer";
 }
 
 #main {
   grid-area: main;
+}
+
+#local {
+  grid-area: local;
 }
 
 #destacado-texto {
@@ -540,6 +536,54 @@
   100% {
     opacity: 100%;
   }
+}
+
+.local {
+  display: flex;
+  width: 85%;
+  border-radius: 20px;
+  margin: auto;
+  background-color: whitesmoke;
+  padding: 15px;
+}
+.local__contenedor {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+}
+.local__img {
+  display: flex;
+  width: 100%;
+  border-radius: 20px;
+  justify-content: center;
+}
+.local__titulo {
+  display: flex;
+  margin: 50px auto 0;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  font-family: "Bebas Neue", cursive;
+  font-size: 60px;
+}
+.local__subtitulo {
+  display: flex;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+}
+.local__horario {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 110px auto 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Bebas Neue", cursive;
+  font-size: 50px;
 }
 
 .contenido-destacado {
@@ -911,6 +955,10 @@
 }
 
 /* ------------- SUCURSAL ------------- */
+#local-sucursal {
+  padding-top: 150px;
+}
+
 .sucursal {
   display: flex;
   flex-direction: column;

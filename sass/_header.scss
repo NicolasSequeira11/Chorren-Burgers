@@ -71,44 +71,39 @@
             margin: auto 20px;
             justify-content: center;
             color: map-get(c.$color-header,"color3");
-            padding: 1px;
             font-size: 20px;
-            border-radius: 15px;
-            animation-name: nav-li;
-            animation-duration: 1s;
         }
         
-        @keyframes nav-li{
-            0%{
-                opacity: 0%;
-            }
-            100%{
-                opacity: 100%;
-            }
-        }
-        
-        &__link:hover{
-            border-radius: 15px;
-            padding: 1px;
-            background-color: map-get(c.$color-header,"color1");
-            transition-duration: 0.9s;
-        }
         
         &__link__texto{
             text-decoration: none;
             color: map-get(c.$color-header,"color3");
+            margin: 5px auto 0;
             padding: 10px;
-            border-radius: 15px;
             font-family: 'Bebas Neue', cursive;
         }
-        
-        &__link__texto:active{
-            text-decoration: none;
-            background-color: map-get(c.$color-header,"color4");
-            color: map-get(c.$color-header,"color1");
-            padding: 10px;
-            border-radius: 15px;
+
+        &__link__texto::after{
+            content: "";
+            display: flex;
+            position: relative;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            width: 100%;
+            background-color: map-get(c.$color-header,"color1");
+            /*animacion de derecha a izquierda*/
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform 0.2s ease-in-out;
         }
+
+        &__link__texto:hover::after{
+            /*animacion de derecha a izquierda*/
+            transform-origin: left;
+            transform: scaleX(1);
+          }
 
 }
 
@@ -122,7 +117,7 @@
     font-size: 15px;
     border-radius: 7px;
     animation-name: boton_pedido;
-    animation-duration: 1s;
+    animation-duration: 0.3s;
 
         @keyframes boton_pedido{
             0%{
@@ -135,8 +130,8 @@
         
         &:hover{
             padding: 1px;
-            background-color: map-get(c.$color-header,"color3");
-            transition-duration: 0.9s;
+            box-shadow: 0 0 12px 0 map-get(c.$color-header,"color5");;
+            transition-duration: 0.2s;
         }
 
         &__texto{
@@ -147,7 +142,7 @@
         }
 
         &__texto:hover{
-            color: map-get(c.$color-header,"color5");
+            color: map-get(c.$color-header,"color3");
         }
 
         &__contenedor{
@@ -177,7 +172,7 @@
             margin: auto;
             padding: 22px;
             position: relative;
-            top: 224px;
+            top: 240px;
             background-color: map-get(c.$color-header,"color2");
             animation:muestraMenu 350ms ease-in-out both;
             z-index: 2000;
@@ -195,13 +190,6 @@
             text-align: center;
         }
 
-        &__link__texto:active{
-            text-decoration: none;
-            text-align: center;
-            width: 100%;
-            background-color: map-get(c.$color-header,"color4");
-            color: map-get(c.$color-header,"color1");
-        }
 }
     .logo{
         height: 100%;
