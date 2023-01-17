@@ -727,7 +727,38 @@ $color4: #ff8e4a;
             flex-direction: column;
             flex-wrap: wrap;
         }
+    
+
+    .local{
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+        width: 100%;
+        background-color: whitesmoke;
+
+            &__contenedor{
+                width: 90%;
+            }
+        
+            &__img {
+                margin: 30px auto 0;
+                width: 100%;
+            }
+
+            &__titulo{
+                font-size: 50px;
+            }
+
+            &__subtitulo{
+                font-size: 30px;
+            }
+
+            &__horario{
+                margin: 40px 0;
+                font-size: 42px;
+            }
     }
+}
 
 @media screen and (min-width:601px) and (max-width: 1100px) {
         
@@ -739,6 +770,34 @@ $color4: #ff8e4a;
                 width: 100%;
                 height: 60vh;
                 margin-top: 35px;
+            }
+    }
+
+    .local{
+        margin: auto;
+        align-items: center;
+        width: 95%;
+        background-color: whitesmoke;
+
+            &__contenedor{
+                width: 90%;
+            }
+        
+            &__img {
+                width: 100%;
+            }
+
+            &__titulo{
+                font-size: 40px;
+            }
+
+            &__subtitulo{
+                font-size: 20px;
+            }
+
+            &__horario{
+                margin: 40px 0;
+                font-size: 32px;
             }
     }
     
