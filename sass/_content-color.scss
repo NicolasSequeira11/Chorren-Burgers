@@ -3,6 +3,10 @@
 
 /* COLOR INICIO */
 
+.local{
+    background-color: map-get(c.$color-menu,"color1");
+}
+
 .contenido-destacado{
 
         &__link{

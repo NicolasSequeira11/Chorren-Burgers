@@ -386,6 +386,10 @@
   }
 }
 /* COLOR INICIO */
+.local {
+  background-color: #EC4E0B;
+}
+
 .contenido-destacado__link {
   color: #ff8e4a;
 }
@@ -1119,7 +1123,6 @@
     margin: auto;
     align-items: center;
     width: 100%;
-    background-color: whitesmoke;
   }
   .local__contenedor {
     width: 90%;
