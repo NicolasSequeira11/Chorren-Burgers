@@ -172,7 +172,7 @@
             margin: auto;
             padding: 22px;
             position: relative;
-            top: 240px;
+            top: 218px;
             background-color: map-get(c.$color-header,"color2");
             animation:muestraMenu 350ms ease-in-out both;
             z-index: 2000;
@@ -185,7 +185,7 @@
         }
 
         &__link__texto{
-            font-size: 25px;
+            font-size: 20px;
             width: 100%;
             text-align: center;
         }

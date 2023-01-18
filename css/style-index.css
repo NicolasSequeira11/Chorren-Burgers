@@ -150,7 +150,7 @@
     margin: auto;
     padding: 22px;
     position: relative;
-    top: 240px;
+    top: 218px;
     background-color: #000000;
     animation: muestraMenu 350ms ease-in-out both;
     z-index: 2000;
@@ -161,7 +161,7 @@
     width: 100%;
   }
   .nav__link__texto {
-    font-size: 25px;
+    font-size: 20px;
     width: 100%;
     text-align: center;
   }
@@ -544,6 +544,7 @@
 
 .local {
   display: flex;
+  justify-content: center;
   width: 85%;
   border-radius: 20px;
   margin: auto;
@@ -1065,7 +1066,7 @@
   font-size: 25px;
   justify-content: center;
   text-align: center;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Poppins", sans-serif;
 }
 
 /* ------------- CONTACTO ------------- */
@@ -1137,6 +1138,22 @@
     height: 60vh;
     margin-top: 35px;
   }
+  .contenido-destacado {
+    display: flex;
+    width: 80%;
+    margin: 90px auto 0;
+  }
+  .contenido-destacado__contenedor {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .contenido-destacado__texto1 {
+    display: flex;
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+  }
   .contenido-destacado-img {
     flex-direction: column;
     flex-wrap: wrap;
@@ -1151,7 +1168,7 @@
     width: 90%;
   }
   .local__img {
-    margin: 30px auto 0;
+    margin: 15% auto 0;
     width: 100%;
   }
   .local__titulo {
@@ -1228,21 +1245,23 @@
 /* ------------- MENU RESPONSIVE ------------- */
 @media screen and (max-width: 650px) {
   .sub-nav__links {
-    width: 20%;
+    width: 25%;
     display: flex;
     margin: auto;
     justify-content: center;
   }
   .sub-nav__link__texto {
-    font-size: 12px;
+    font-size: 10px;
   }
   .sub-nav__link__icon {
     display: none;
   }
   .title-menu {
+    font-size: 30px;
     justify-content: center;
   }
   .title-menu__texto {
+    font-size: 15px;
     justify-content: center;
   }
   .menu__contenedor {
@@ -1256,7 +1275,7 @@
     width: 100%;
   }
   .menu__img__texto {
-    font-size: 20px;
+    font-size: 15px;
   }
   .menu__img__texto__descripcion {
     width: 100px;
@@ -1351,7 +1370,7 @@
     flex-direction: column;
     width: 80%;
     margin: auto;
-    font-family: "Bebas Neue", cursive;
+    font-family: "Poppins", sans-serif;
   }
   .promo-titulo__texto {
     display: flex;
@@ -1360,6 +1379,7 @@
     padding: 130px 0 0 0;
     text-align: center;
     justify-content: center;
+    font-size: 40px;
   }
   .promo {
     display: flex;
