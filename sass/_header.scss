@@ -71,7 +71,7 @@
             margin: auto 20px;
             justify-content: center;
             color: map-get(c.$color-header,"color3");
-            font-size: 20px;
+            font-size: 17px;
         }
         
         
@@ -79,8 +79,7 @@
             text-decoration: none;
             color: map-get(c.$color-header,"color3");
             margin: 5px auto 0;
-            padding: 10px;
-            font-family: 'Bebas Neue', cursive;
+            font-family: 'Poppins', sans-serif;
         }
 
         &__link__texto::after{
@@ -138,7 +137,8 @@
             text-decoration: none;
             color: map-get(c.$color-header,"color3");
             padding: 10px;
-            font-family: 'Bebas Neue', cursive;
+            font-size: 15px;
+            font-family: 'Poppins', sans-serif;
         }
 
         &__texto:hover{

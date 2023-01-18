@@ -37,8 +37,8 @@
 
         &__horario__titulo{
             margin: 0;
-            font-family: 'Bebas Neue', cursive;
-            font-size: 3em;
+            font-family: 'Poppins', sans-serif;
+            font-size: 2em;
             text-align: center;
             color: map-get(c.$color-footer,"color3");
         }
@@ -46,8 +46,8 @@
         &__horario__texto{
             text-align: center;
             margin: auto;
-            font-family: 'Bebas Neue', cursive;
-            font-size: 1.2em;
+            font-family: 'Sintony', sans-serif;
+            font-size: 1em;
             color: map-get(c.$color-footer,"color3");
         }
 }
@@ -69,7 +69,7 @@
                 font-size: 15px;
                 text-align: center;
                 color: map-get(c.$color-footer,"color3");
-                font-family: 'Source Sans Pro', sans-serif;
+                font-family: 'Sintony', sans-serif;
             }
 
             &__texto--2{
@@ -81,7 +81,7 @@
                 font-size: 15px;
                 text-align: center;
                 color: map-get(c.$color-footer,"color3");
-                font-family: 'Source Sans Pro', sans-serif;
+                font-family: 'Sintony', sans-serif;
             }
 
             &__contenedor{

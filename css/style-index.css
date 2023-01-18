@@ -63,14 +63,13 @@
   margin: auto 20px;
   justify-content: center;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 17px;
 }
 .nav__link__texto {
   text-decoration: none;
   color: #ffffff;
   margin: 5px auto 0;
-  padding: 10px;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Poppins", sans-serif;
 }
 .nav__link__texto::after {
   content: "";
@@ -122,7 +121,8 @@
   text-decoration: none;
   color: #ffffff;
   padding: 10px;
-  font-family: "Bebas Neue", cursive;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
 }
 .pedido__texto:hover {
   color: #ffffff;
@@ -227,16 +227,16 @@
 }
 .footer__horario__titulo {
   margin: 0;
-  font-family: "Bebas Neue", cursive;
-  font-size: 3em;
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
   text-align: center;
   color: #ffffff;
 }
 .footer__horario__texto {
   text-align: center;
   margin: auto;
-  font-family: "Bebas Neue", cursive;
-  font-size: 1.2em;
+  font-family: "Sintony", sans-serif;
+  font-size: 1em;
   color: #ffffff;
 }
 
@@ -256,7 +256,7 @@
   font-size: 15px;
   text-align: center;
   color: #ffffff;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Sintony", sans-serif;
 }
 .footer-info__texto--2 {
   display: flex;
@@ -267,7 +267,7 @@
   font-size: 15px;
   text-align: center;
   color: #ffffff;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Sintony", sans-serif;
 }
 .footer-info__contenedor {
   display: flex;
@@ -563,12 +563,12 @@
 }
 .local__titulo {
   display: flex;
-  margin: 50px auto 0;
+  margin: auto;
   justify-content: center;
   text-align: center;
   width: 100%;
-  font-family: "Bebas Neue", cursive;
-  font-size: 60px;
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
 }
 .local__subtitulo {
   display: flex;
@@ -576,18 +576,43 @@
   text-align: center;
   justify-content: center;
   width: 100%;
-  font-family: "Bebas Neue", cursive;
-  font-size: 30px;
+  font-family: "Sintony", sans-serif;
+  font-size: 20px;
 }
 .local__horario {
   display: flex;
   text-align: center;
   justify-content: center;
-  margin: 110px auto 0;
+  margin: auto;
   width: 100%;
-  height: 100%;
-  font-family: "Bebas Neue", cursive;
-  font-size: 50px;
+  font-family: "Sintony", sans-serif;
+  font-size: 20px;
+}
+.local__reserva {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+.local__reserva__titulo {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+}
+.local__reserva__texto {
+  font-family: "Sintony", sans-serif;
+  padding: 10px;
+}
+.local__reserva__boton {
+  background-color: #0dc143;
+  text-decoration: none;
+  margin: auto;
+  text-align: center;
+  color: white;
+  padding: 13px;
+  border-radius: 5px;
+  font-family: "Sintony", sans-serif;
 }
 
 .contenido-destacado {
@@ -604,13 +629,13 @@
 .contenido-destacado__texto1 {
   display: flex;
   font-size: 40px;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Poppins", sans-serif;
 }
 .contenido-destacado__link {
   display: flex;
   font-size: 20px;
   margin: auto 0;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Poppins", sans-serif;
   text-decoration: none;
 }
 .contenido-destacado__texto2:hover {
@@ -760,9 +785,10 @@
 }
 .sub-nav__link__texto {
   text-decoration: none;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Poppins", sans-serif;
   align-items: center;
   margin: auto;
+  font-size: 15px;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -801,10 +827,11 @@
 .title-menu {
   display: flex;
   width: 80%;
-  font-size: 60px;
-  margin: 100px auto 0;
+  font-size: 50px;
+  margin: auto;
+  padding-top: 100px;
   justify-content: start;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Poppins", sans-serif;
   animation-name: title-menu;
   animation-duration: 1s;
 }
@@ -822,7 +849,7 @@
   font-size: 20px;
   margin: auto;
   justify-content: start;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Poppins", sans-serif;
   animation-name: title-menu;
   animation-duration: 1s;
 }
@@ -940,10 +967,10 @@
   display: flex;
   width: 100%;
   margin: 15px auto;
-  font-size: 25px;
+  font-size: 20px;
   justify-content: center;
   text-align: center;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Poppins", sans-serif;
 }
 .menu__img__texto__descripcion {
   display: block;
@@ -953,7 +980,7 @@
   width: 15em;
   opacity: 0%;
   height: 120px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Sintony", sans-serif;
   font-size: 17px;
   line-height: 1.7;
 }
@@ -963,20 +990,19 @@
   padding-top: 150px;
 }
 
-.sucursal {
+.local-mapa {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  margin: 0 auto 50px;
-  font-family: "Source Sans Pro", sans-serif;
+  width: 85%;
+  background-color: whitesmoke;
+  margin: 10px auto 0;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
 }
-.sucursal__titulo {
-  width: 50%;
-  margin: auto;
-  text-align: center;
-  font-size: 55px;
-  margin: 140px auto 20px;
-  font-family: "Bebas Neue", cursive;
+.local-mapa__mapa {
+  width: 100%;
+  border-radius: 20px;
 }
 
 /* ------------- PROMOCIONES ------------- */
@@ -986,7 +1012,7 @@
   font-size: 60px;
   margin: auto;
   justify-content: start;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Poppins", sans-serif;
   animation-name: title-menu;
   animation-duration: 1s;
 }
@@ -1005,7 +1031,7 @@
   display: flex;
   width: 100%;
   margin: 12% auto 2%;
-  font-size: 70px;
+  font-size: 60px;
   justify-content: start;
 }
 
@@ -1047,15 +1073,15 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .form__titulo {
   width: 50%;
   margin: auto;
   text-align: center;
-  font-size: 40px;
+  font-size: 35px;
   margin: 140px auto 20px;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Poppins", sans-serif;
 }
 
 .form__contenedor {
@@ -1063,9 +1089,6 @@
   flex-direction: column;
   width: 50%;
   margin: 0 auto 30px;
-  /*
-  &__input:hover{
-  }*/
   /*&__boton:active{
   }*/
 }
@@ -1082,7 +1105,7 @@
   height: 7vh;
   padding: 10px;
   cursor: pointer;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Sintony", sans-serif;
 }
 .form__contenedor__textarea {
   width: 100%;
@@ -1090,7 +1113,7 @@
   border-radius: 5px;
   padding: 10px;
   cursor: pointer;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Sintony", sans-serif;
 }
 .form__contenedor__boton {
   width: 30%;
@@ -1099,7 +1122,7 @@
   border-radius: 30px;
   font-size: 25px;
   cursor: pointer;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Poppins", sans-serif;
 }
 
 /* ------------- RESPONSIVE ------------- */
@@ -1132,14 +1155,28 @@
     width: 100%;
   }
   .local__titulo {
-    font-size: 50px;
+    font-size: 30px;
+    padding-top: 20px;
   }
   .local__subtitulo {
-    font-size: 30px;
+    font-size: 20px;
   }
   .local__horario {
-    margin: 40px 0;
-    font-size: 42px;
+    margin: auto;
+    font-size: 20px;
+  }
+  .local__reserva {
+    padding-top: 40px;
+  }
+  .local__reserva__titulo {
+    font-size: 30px;
+  }
+  .local__reserva__texto {
+    padding: 10px;
+  }
+  .local__reserva__boton {
+    padding: 13px;
+    border-radius: 5px;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1100px) {
@@ -1171,8 +1208,21 @@
     font-size: 20px;
   }
   .local__horario {
-    margin: 40px 0;
-    font-size: 32px;
+    margin: auto;
+    font-size: 20px;
+  }
+  .local__reserva {
+    padding-top: 40px;
+  }
+  .local__reserva__titulo {
+    font-size: 30px;
+  }
+  .local__reserva__texto {
+    padding: 10px;
+  }
+  .local__reserva__boton {
+    padding: 13px;
+    border-radius: 5px;
   }
 }
 /* ------------- MENU RESPONSIVE ------------- */
@@ -1182,7 +1232,9 @@
     display: flex;
     margin: auto;
     justify-content: center;
-    font-size: 15px;
+  }
+  .sub-nav__link__texto {
+    font-size: 12px;
   }
   .sub-nav__link__icon {
     display: none;
@@ -1208,7 +1260,7 @@
   }
   .menu__img__texto__descripcion {
     width: 100px;
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 @media screen and (min-width: 651px) and (max-width: 1250px) {
@@ -1242,29 +1294,54 @@
     width: 100%;
   }
   .menu__img__texto {
-    font-size: 20px;
+    font-size: 15px;
   }
   .menu__img__texto__descripcion {
     width: 100px;
-    font-size: 15px;
+    font-size: 10px;
   }
 }
 /* ------------- SUCURSAL RESPONSIVE ------------- */
 @media screen and (max-width: 600px) {
-  .sucursal {
+  .local {
+    background-color: white;
+    width: 100%;
+    margin-top: -50px;
+  }
+  .local-mapa {
     display: flex;
     flex-direction: column;
-    width: 90%;
-    margin: 0 auto 50px;
-    font-family: "Source Sans Pro", sans-serif;
+    width: 85%;
+    background-color: whitesmoke;
+    margin: 10px auto 0;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
   }
-  .sucursal__titulo {
+  .local-mapa__mapa {
     width: 100%;
-    margin: auto;
-    text-align: center;
-    font-size: 45px;
-    margin: 140px auto 20px;
-    font-family: "Bebas Neue", cursive;
+    border-radius: 20px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1250px) {
+  .local {
+    background-color: white;
+    width: 85%;
+    flex-direction: column;
+  }
+  .local-mapa {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    background-color: whitesmoke;
+    margin: 10px auto 0;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .local-mapa__mapa {
+    width: 100%;
+    border-radius: 20px;
   }
 }
 /* ------------- PROMOCIONES RESPONSIVE ------------- */
