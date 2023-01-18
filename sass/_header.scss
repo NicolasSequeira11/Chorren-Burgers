@@ -5,7 +5,8 @@
 }
 
 .logo{ 
-    
+    height: 100%;
+
     &__img{
         display: flex;
         height: 100%;
@@ -64,6 +65,7 @@
         &__links{
             display: flex;
             margin-left: 20px;
+            height: 100%;
         }
         
         &__link{
@@ -137,6 +139,7 @@
             text-decoration: none;
             color: map-get(c.$color-header,"color3");
             padding: 10px;
+            margin: auto;
             font-size: 15px;
             font-family: 'Poppins', sans-serif;
         }
