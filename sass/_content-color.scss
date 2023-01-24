@@ -4,13 +4,17 @@
 /* COLOR INICIO */
 
 .local{
-    background-color: map-get(c.$color-menu,"color1");
+    background-color: map-get(c.$color-inicio,"color2");
 }
 
 .contenido-destacado{
 
         &__link{
             color: map-get(c.$color-inicio,"color4");
+        }
+
+        &__texto1{
+            color: map-get(c.$color-inicio,"color3");
         }
 
         &__texto2:hover{
@@ -101,7 +105,7 @@
 .form__contenedor{
 
         &__titulo{
-            color: map-get(c.$color-contacto,"color1");
+            color: map-get(c.$color-contacto,"color3");
         }
 
         &__input{

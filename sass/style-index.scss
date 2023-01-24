@@ -3,9 +3,9 @@ $color2: #000000;
 $color3: #ffffff;
 $color4: #ff8e4a;
 
-@use '_header';
-@use '_footer';
-@use '_content-color';
+@use 'header';
+@use 'footer';
+@use 'content-color';
 
 * {
 	padding: 0;
@@ -15,741 +15,183 @@ $color4: #ff8e4a;
 
 /* ------------- HOME ------------- */
 
-#body{
-	display: grid;
-    background-color: #FEFEFE;
-	grid-template-columns: 50% 50%;
-	grid-template-areas: 
-    "nav nav"
-    "main main"
-    "local local"
-    "dest_texto dest_texto"
-    "dest_img dest_img"
-    "footer footer"
-	;
-}
-
-#main{
-    grid-area: main;
-}
-
-#local{
-    grid-area: local;
-}
-
-#destacado-texto{
-    grid-area: dest_texto;
-}
-
-#destacado-img{
-    grid-area: dest_img;
-}
-
-#footer{
-    grid-area: footer;
-}
-
-.img-index{
-	width: 100%;
-	height: 87vh;
-    margin-bottom: 10%;
-
-    &__img {
-        width: 100%;
-        height: 100vh;
-        object-fit:cover;
-        animation-name: img-home;
-        animation-duration: 2s;
+    #body{
+        display: grid;
+        background-color: #FEFEFE;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "nav nav"
+        "carousel carousel"
+        "main main"
+        "local local"
+        "dest_texto dest_texto"
+        "dest_img dest_img"
+        "footer footer"
+        ;
     }
-
-    @keyframes img-home{
-        0%{
-            opacity: 0%;
-        }
-        100%{
-            opacity: 100%;
-        }
-    }
-}
-
-.local{
-    display: flex;
-    justify-content: center;
-    width: 85%;
-    border-radius: 20px;
-    margin: auto;
-    background-color: whitesmoke;
-    padding: 15px;
-
-        &__contenedor{
-            display: flex;
-            width: 80%;
-            flex-direction: column;
-        }
-
-        &__img{
-            display: flex;
-            width: 100%;
-            border-radius: 20px;
-            justify-content: center;
-        }
-
-        &__titulo{
-            display: flex;
-            margin: auto;
-            justify-content: center;
-            text-align: center;
-            width: 100%;
-            font-family: 'Poppins', sans-serif;
-            font-size: 50px;
-        }
-
-        &__subtitulo{
-            display: flex;
-            margin: auto;
-            text-align: center;
-            justify-content: center;
-            width: 100%;
-            font-family: 'Sintony', sans-serif;            
-            font-size: 20px;
-        }
-
-        &__horario{
-            display: flex;
-            text-align: center;
-            justify-content: center;
-            margin: auto;
-            width: 100%;
-            font-family: 'Sintony', sans-serif;
-            font-size: 20px;
-        }
-
-        &__reserva{
-            display: flex;
-            flex-direction: column;
-            margin: auto;
-            justify-content: center;
-            text-align: center;
-            padding: 10px;
-        }
-
-        &__reserva__titulo{
-            font-family: 'Poppins', sans-serif;
-            font-size: 30px;
-        }
-
-        &__reserva__texto{
-            font-family: 'Sintony', sans-serif;
-            padding: 10px;
-        }
-
-        &__reserva__boton{
-            background-color: #0dc143;
-            text-decoration: none;
-            margin: auto;
-            text-align: center;
-            color: white;
-            padding: 13px;
-            border-radius: 5px;
-            font-family: 'Sintony', sans-serif;
-
-        }
-
-}
-
-.contenido-destacado{
-	display: flex;
-	width: 80%;
-	margin: 90px auto 0;
-
-
-        &__contenedor{
-            display: flex;
-            margin: auto;
-            width: 100%;
-            justify-content: space-between;
-        }
-
-        &__texto1{
-            display: flex;
-            font-size: 40px;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        &__link{
-            display: flex;
-            font-size: 20px;
-            margin: auto 0;
-            font-family: 'Poppins', sans-serif;
-            text-decoration: none;
-        }
-
-        &__texto2:hover{
-            text-decoration-line: underline;
-        }
-
-}
-
-.contenido-destacado-img{
-        display: flex;
-        width: 80%;
-        margin: auto;
-        
-
-            &__contenedor{
-                display: flex;
-                width: 100%;
-                margin: 20px 0;
-            }
-
-            &__img{
-                display: flex;
-                width: 100%;
-                max-width: 95%;
-                margin: auto;
-                object-fit: cover;
-                border-radius: 20px;
-                animation-name: img-dest;
-                animation-duration: 2s;
-            }
-
-            @keyframes img-dest{
-                0%{
-                    opacity: 0%;
-                }
-                100%{
-                    opacity: 100%;
-                }
-            }
-
-            &__img:hover{
-                transition-property: box-shadow;
-                transition-duration: 0.1s;
-            }
-
-}
-
-#promo-text-index{
-	grid-area: promo-text;
-}
-
-.cont-promo{
-	display: flex;
-	width: 80%;
-	margin: 90px auto 0;
-}
-
-.cont-promo-text{
-	display: flex;
-	margin: auto;
-	width: 100%;
-	justify-content: space-between;
-
-        &__h1{
-            display: flex;
-            font-size: 40px;
-            font-family: 'Bebas Neue', cursive;
-        }
-
-        &__a{
-            display: flex;
-            margin: auto 0;
-            font-size: 20px;
-            justify-content:flex-end;
-            font-family: 'Bebas Neue', cursive;
-            text-decoration: none;
-        }
-}
-
-#promo-index{
-	grid-area: promo;
-}
-
-.cont-promo-img{
-	display: flex;
-	width: 80%;
-	margin: auto;
-
-        &__div{
-            display: flex;
-            width: 100%;
-            margin: 20px 0;
-        }
-
-        &__img{
-            display: flex;
-            width: 100%;
-            max-width: 95%;
-            margin: auto;
-            object-fit: cover;
-            border-radius: 20px;
-            animation-name: img-dest;
-            animation-duration: 2s;
-        }
-
-        &__img:hover{
-            transition-property: box-shadow;
-            transition-duration: 0.1s;
-        }
-}
-
-@keyframes img-dest{
-	0%{
-		opacity: 0%;
-	}
-	100%{
-		opacity: 100%;
-	}
-}
-
-/* ------------- MENÚ ------------- */
-
-#main-menu{
-	display: grid;
-	grid-template-columns: 50% 50%;
-	grid-template-rows: auto;
-	justify-content: center;
-	width: 100%;
-	height: auto;
-	grid-template-areas: 
-	"sub_nav sub_nav"
-	"title title"
-	"menu menu"
-    "titlepicada titlepicada"
-    "picada picada"
-	"titlebebidas titlebebidas"
-	"bebidas bebidas"
-    "titlecervezas titlecervezas"
-	"cervezas cervezas"
-	"titlepostres titlepostres"
-	"postres postres"
-	;
-}
-
-#sub-nav{
-	display: grid;
-	grid-template-columns: 100%;
-	grid-template-rows: auto;
-	margin-top: 100px;
-    grid-area: sub_nav;
-}
-
-    .sub-nav{
-        display: flex;
-        position: fixed;
-        top: 100px;
-        width: 100%;
-        height: 7vh;
-        font-size: 20px;
-        z-index: 200;
-
-
-            &__links{
-                width: 65%;
-                display: flex;
-                margin: auto;
-                justify-content: center;
-            }
-
-            &__link{
-                display: flex;
-                width: 100%;
-                text-align: center;
-                justify-content: center;
-                padding: 0 20px;
-            }
-
-            &__link__texto{
-                text-decoration: none;
-                font-family: 'Poppins', sans-serif;
-                align-items: center;
-                margin: auto;
-                font-size: 15px;
-                height: 100%;
-                display: flex;
-                flex-direction: row;
-            }
-
-            &__link__texto:hover{
-                color: black;
-            }
-
-            &__link__icon{
-                display: flex;
-                align-items: center;
-                margin: auto;
-                justify-content: center;
-                height: 80%;
-            }
-}
-
-
-
-#title{
-	grid-area: title;
-}
-
-#title-picada{
-    grid-area: titlepicada;
-}
-
-#title-bebidas{
-	grid-area: titlebebidas;
-}
-
-#title-cervezas{
-	grid-area: titlecervezas;
-}
-
-#title-postres{
-	grid-area: titlepostres;
-}
-
-.title-menu{
-	display: flex;
-	width: 80%;
-	font-size: 50px;
-	margin: auto;
-    padding-top: 100px;
-	justify-content:start;
-    font-family: 'Poppins', sans-serif;
-	animation-name: title-menu;
-	animation-duration: 1s;
-}
-
-.title-menu h1{
-	display: flex;
-	width: 100%;
-	margin: auto;
-	justify-content:start;
-}
-
-.title-menu__texto{
-	display: flex;
-	width: 80%;
-	font-size: 20px;
-	margin: auto;
-	justify-content:start;
-    font-family: 'Poppins', sans-serif;
-	animation-name: title-menu;
-	animation-duration: 1s;
-}
-
-@keyframes title-menu{
-	0%{
-		opacity: 0%;
-		transform: translate(-500px, 0);
-	}
-
-	100%{
-		opacity: 100%;
-		transform: translate(0, 0);
-	}
-}
-
-#menu{
-	display: grid;
-	grid-template-columns: 90%;
-	grid-template-rows: auto;
-	gap: 50px;
-	justify-content: center;
-	width: 90%;
-	margin: auto;
-	grid-area: menu;
-}
-
-#menu-picada{
-    display: grid;
-	grid-template-columns: 90%;
-	grid-template-rows: auto;
-	gap: 50px;
-	justify-content: center;
-	width: 90%;
-	margin: auto;
-    grid-area: picada;
-}
-
-#menu-bebidas{
-	display: grid;
-	grid-template-columns: 90%;
-	grid-template-rows: auto;
-	gap: 50px;
-	justify-content: center;
-	width: 90%;
-	margin: auto;
-	grid-area: bebidas;
-}
-
-#menu-cervezas{
-	display: grid;
-	grid-template-columns: 90%;
-	grid-template-rows: auto;
-	gap: 50px;
-	justify-content: center;
-	width: 90%;
-	margin: auto;
-	grid-area: cervezas;
-}
-
-#menu-postres{
-	display: grid;
-	grid-template-columns: 90%;
-	grid-template-rows: auto;
-	justify-content: center;
-	width: 90%;
-	margin: auto;
-	grid-area: postres;
-}
-
-.menu{
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-	margin: auto;
-	flex-wrap: wrap;
-
-
-        &__contenedor__img{
-            display: flex;
-            width: 23%;
-            margin: 10px auto;	
-            flex-direction: column;
-            padding: 15px;
-        }
-
-        &__contenedor_img:hover{
-            border-radius: 20px;
-        }
-        
-        &__img{
-            display: flex;
-            width: 75%;
-            margin: auto;
-            object-fit: cover;
-            border-radius: 20px;
-        }
-
-        &__contenedor__img:hover{
-            transform: scale(1.1);
-            transition-duration: 0.5s;
-        }
-
-        &__contenedor__img:hover > &__img__texto__descripcion{
-            display: flex;
-            opacity: 94%;
-            align-items: center;
-            height: 90%;
-            width: 88%;
-            border-radius: 20px;
-            transition-duration: 0.6s;
-        }
-
-        @keyframes menu{
-            0%{
-                box-shadow: 0%;
-            }
-            100%{
-                box-shadow: 100%;
-            }
-        }
-
-        &__img__texto{
-            display: flex;
-            width: 100%;
-            margin: 15px auto;
-            font-size: 20px;
-            justify-content: center;
-            text-align: center;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        &__img__texto__descripcion{
-            display: block;
-            position: absolute;
-            text-align:start;
-            justify-content: center;
-            width: 15em;
-            opacity: 0%;
-            height: 120px;
-            font-family: 'Sintony', sans-serif;
-            font-size: 17px;
-            line-height: 1.7;
-        }
-}
-
-/* ------------- SUCURSAL ------------- */
-
-#local-sucursal{
-    padding-top: 150px;
-}
-
-.local-mapa{
-    display: flex;
-    flex-direction: column;
-    width: 85%;
-    background-color: whitesmoke;
-    margin: 10px auto 0;
-    border-radius: 20px;
-    justify-content: center;
-    align-items: center;
     
-        &__mapa{
-            width: 100%;
-            border-radius: 20px;
-        }
-}
-
-/* ------------- PROMOCIONES ------------- */
-
-.promo-titulo{
-	display: flex;
-	width: 80%;
-	font-size: 60px;
-	margin:auto;
-	justify-content:start;
-    font-family: 'Poppins', sans-serif;
-	animation-name: title-menu;
-	animation-duration: 1s
-}
-
-@keyframes title-menu{
-	0%{
-		opacity: 0%;
-		transform: translate(-500px, 0);
-	}
-
-	100%{
-		opacity: 100%;
-		transform: translate(0, 0);
-	}
-}
-
-.promo-titulo__texto{
-    display: flex;
-    width: 100%;
-    margin: 12% auto 2%;
-    font-size: 60px;
-    justify-content:start;
-}
-
-.promo{
-	display: flex;
-	width: 80%;
-	margin: auto;
-	flex-wrap: wrap;
-
-
-        &__contenedor{
-            display: flex;
-            width: 30%;
-            margin: auto;	
-            flex-direction: column;
-            padding: 15px 0;
-        }
-
-        &__img{
-            display: flex;
-            width: 100%;
-            margin: auto;
-            object-fit: cover;
-            border-radius: 20px;
-        }
-
-        &__img:hover{
-            transform: scale(1.1);
-        }
-
-        .menu-img h1{
-            display: flex;
-            width: 100%;
-            margin: 15px auto;
-            font-size: 25px;
-            justify-content: center;
-            text-align: center;
-            font-family: 'Poppins', sans-serif;
-        }
-}
-
-/* ------------- CONTACTO ------------- */
-
-.form{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    font-family: 'Poppins', sans-serif;
-
-        &__titulo{
-            width: 50%;
-            margin: auto;
-            text-align: center;
-            font-size: 35px;
-            margin: 140px auto 20px;
-            font-family: 'Poppins', sans-serif;
-        }
-}
-
-.form__contenedor{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin: 0 auto 30px;
-
-        &__titulo{
-            display: flex;
-            width: 100%;
-            margin: 13px auto 0;
-            
-        }
-
-        &__input{
-            flex-direction: column;
-            width: 100%;
-            margin: 5px auto;
-            border-radius: 5px;
-            height: 7vh;
-            padding: 10px;
-            cursor: pointer;
-            font-family: 'Sintony', sans-serif;
-        }
-
-        &__textarea{
-            width: 100%;
-            margin: 5px auto;
-            border-radius: 5px;
-            padding: 10px;
-            cursor: pointer;
-            font-family: 'Sintony', sans-serif;
-        }
-
-        &__boton{
-            width: 30%;
-            margin: 15px auto 40px;
-            height: 7vh;
-            border-radius: 30px;
-            font-size: 25px;
-            cursor: pointer;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        /*&__boton:active{
-        }*/
-}
-
-/* ------------- RESPONSIVE ------------- */
-
-/* ------------- HOME RESPONSIVE ------------- */
-
-@media screen and (max-width: 600px) {
-
+    #main{
+        grid-area: main;
+    }
+    
+    #local{
+        grid-area: local;
+    }
+    
+    #destacado-texto{
+        grid-area: dest_texto;
+    }
+    
+    #destacado-img{
+        grid-area: dest_img;
+    }
+    
+    #footer{
+        grid-area: footer;
+    }
+    
     .img-index{
         width: 100%;
         height: 60vh;
-        
-            &__img{
-                width: 100%;
-                height: 60vh;
-                margin-top: 35px;
+        margin-bottom: 10%;
+    
+        &__img {
+            width: 100%;
+            height: 60vh;
+            object-fit:cover;
+            margin-top: 35px;
+            animation-name: img-home;
+            animation-duration: 2s;
+        }
+    
+        @keyframes img-home{
+            0%{
+                opacity: 0%;
             }
+            100%{
+                opacity: 100%;
+            }
+        }
+    }
+
+    #carouselExampleIndicators{
+        grid-area: carousel;
+        margin-top: 100px;
+    }
+    
+    .local{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        padding: 15px;
+        border: 3px solid black;
+
+    
+            &__contenedor__img{
+                display: flex;
+                width: 90%;
+                flex-direction: column;
+            }
+
+            &__contenedor__info{
+                display: flex;
+                width: 90%;
+                flex-direction: column;
+                padding: 30px;
+                background-color: white;
+            }
+    
+            &__img{
+                display: flex;
+                width: 100%;
+                border-radius: 5px;
+                margin: 15% auto 0;
+                justify-content: center;
+            }
+    
+            &__titulo{
+                display: flex;
+                margin: auto;
+                justify-content: center;
+                text-align: center;
+                width: 100%;
+                margin-top: 20px;
+                font-family: 'Poppins', sans-serif;
+                font-size: 30px;
+                background-color:#ff5f00;
+                color: white;
+            }
+    
+            &__subtitulo{
+                display: flex;
+                margin: auto;
+                text-align: center;
+                justify-content: center;
+                width: 100%;
+                font-family: 'Poppins', sans-serif;
+                font-size: 20px;
+                color:black;
+                padding: 10px;
+            }
+    
+            &__horario{
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                margin: auto;
+                width: 100%;
+                font-family: 'Poppins', sans-serif;
+                font-size: 20px;
+                padding: 10px;
+                color:black;
+            }
+    
+            &__reserva{
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                justify-content: center;
+                text-align: center;
+                padding-top: 40px;
+            }
+    
+            &__reserva__titulo{
+                font-family: 'Poppins', sans-serif;
+                font-size: 30px;
+                background-color:#ff5f00;
+                color: white;
+            }
+    
+            &__reserva__texto{
+                font-family: 'Sintony', sans-serif;
+                padding: 10px;
+            }
+    
+            &__reserva__boton{
+                background-color: #0dc143;
+                text-decoration: none;
+                margin: auto;
+                text-align: center;
+                color: white;
+                padding: 13px;
+                border-radius: 5px;
+                font-family: 'Sintony', sans-serif;
+            }
+
+            &__icon__contenedor{
+                display: flex;
+                width: 100%;
+            }
+
+            &__icon{
+                display: flex;
+                padding: 5px;
+                width: 30%;
+            }
+    
     }
     
     .contenido-destacado{
@@ -763,157 +205,867 @@ $color4: #ff8e4a;
                 margin: auto;
                 width: 100%;
                 justify-content: space-between;
+                background: rgb(255,95,0);
+                background: linear-gradient(90deg, rgba(255,95,0,1) 40%, rgba(255,255,255,1) 100%);
             }
     
             &__texto1{
                 display: flex;
-                font-size: 22px;
+                margin: auto 0;
+                font-size: 23px;
                 font-family: 'Poppins', sans-serif;
+                padding: 5px 10px;
+            }
+    
+            &__texto2{
+                display: flex;
+                margin: auto 0;
+            }
+
+            &__link{
+                display: flex;
+                font-size: 20px;
+                font-family: 'Poppins', sans-serif;
+                text-decoration: none;
+            }
+    
+            &__texto2:hover{
+                text-decoration-line: underline;
             }
     
     }
-
-        .contenido-destacado-img{
+    
+    .contenido-destacado-img{
+            display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-        }
+            width: 80%;
+            margin: auto;
+            
     
-
-    .local{
-        flex-direction: column;
+                &__contenedor{
+                    display: flex;
+                    width: 100%;
+                    margin: 20px 0;
+                }
+    
+                &__img{
+                    display: flex;
+                    width: 100%;
+                    max-width: 95%;
+                    margin: auto;
+                    object-fit: cover;
+                    border-radius: 5px;
+                    animation-name: img-dest;
+                    animation-duration: 2s;
+                }
+    
+                @keyframes img-dest{
+                    0%{
+                        opacity: 0%;
+                    }
+                    100%{
+                        opacity: 100%;
+                    }
+                }
+    
+                &__img:hover{
+                    transition-property: box-shadow;
+                    transition-duration: 0.1s;
+                }
+    
+    }
+    
+    #promo-text-index{
+        grid-area: promo-text;
+    }
+    
+    .cont-promo{
+        display: flex;
+        width: 80%;
+        margin: 90px auto 0;
+    }
+    
+    .cont-promo-text{
+        display: flex;
         margin: auto;
-        align-items: center;
         width: 100%;
-
-            &__contenedor{
-                width: 90%;
+        justify-content: space-between;
+    
+            &__h1{
+                display: flex;
+                font-size: 40px;
+                font-family: 'Bebas Neue', cursive;
             }
-        
-            &__img {
-                margin: 15% auto 0;
-                width: 100%;
-            }
-
-            &__titulo{
-                font-size: 30px;
-                padding-top: 20px;
-            }
-
-            &__subtitulo{
+    
+            &__a{
+                display: flex;
+                margin: auto 0;
                 font-size: 20px;
-            }
-
-            &__horario{
-                margin: auto;
-                font-size: 20px;
-            }
-
-            &__reserva{
-                padding-top: 40px;
-            }
-    
-            &__reserva__titulo{
-                font-size: 30px;
-            }
-    
-            &__reserva__texto{
-                padding: 10px;
-            }
-    
-            &__reserva__boton{
-                padding: 13px;
-                border-radius: 5px;
+                justify-content:flex-end;
+                font-family: 'Bebas Neue', cursive;
+                text-decoration: none;
             }
     }
-}
+    
+    #promo-index{
+        grid-area: promo;
+    }
+    
+    .cont-promo-img{
+        display: flex;
+        width: 80%;
+        margin: auto;
+    
+            &__div{
+                display: flex;
+                width: 100%;
+                margin: 20px 0;
+            }
+    
+            &__img{
+                display: flex;
+                width: 100%;
+                max-width: 95%;
+                margin: auto;
+                object-fit: cover;
+                border-radius: 20px;
+                animation-name: img-dest;
+                animation-duration: 2s;
+            }
+    
+            &__img:hover{
+                transition-property: box-shadow;
+                transition-duration: 0.1s;
+            }
+    }
+    
+    @keyframes img-dest{
+        0%{
+            opacity: 0%;
+        }
+        100%{
+            opacity: 100%;
+        }
+    }
+    
 
-@media screen and (min-width:601px) and (max-width: 1100px) {
+    /* ------------- MENU  ------------- */
         
+        #main-menu{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+            grid-template-areas: 
+            "sub_nav sub_nav"
+            "title title"
+            "menu menu"
+            "titlepicada titlepicada"
+            "picada picada"
+            "titlebebidas titlebebidas"
+            "bebidas bebidas"
+            "titlecervezas titlecervezas"
+            "cervezas cervezas"
+            "titlepostres titlepostres"
+            "postres postres"
+            ;
+        }
+        
+        #sub-nav{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: auto;
+            margin-top: 100px;
+            grid-area: sub_nav;
+        }
+        
+            .sub-nav{
+                display: flex;
+                position: fixed;
+                top: 100px;
+                width: 100%;
+                height: 7vh;
+                font-size: 20px;
+                z-index: 200;
+        
+        
+                    &__links{
+                        width: 25%;
+                        display: flex;
+                        margin: auto;
+                        justify-content: center;
+                    }
+        
+                    &__link{
+                        display: flex;
+                        width: 100%;
+                        text-align: center;
+                        justify-content: center;
+                        padding: 0 20px;
+                    }
+        
+                    &__link__texto{
+                        text-decoration: none;
+                        font-family: 'Sintony', sans-serif;
+                        align-items: center;
+                        margin: auto;
+                        font-size: 0;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: row;
+                    }
+        
+                    &__link__texto:hover{
+                        color: black;
+                    }
+        
+                    &__link__icon{
+                        display: flex;
+                        align-items: center;
+                        margin: auto;
+                        justify-content: center;
+                        height: 100%;
+                    }
+        }
+        
+        
+        
+        #title{
+            grid-area: title;
+        }
+        
+        #title-picada{
+            grid-area: titlepicada;
+        }
+        
+        #title-bebidas{
+            grid-area: titlebebidas;
+        }
+        
+        #title-cervezas{
+            grid-area: titlecervezas;
+        }
+        
+        #title-postres{
+            grid-area: titlepostres;
+        }
+        
+        .title-menu__contenedor{
+            width: 100%;
+            margin: auto;
+            background: rgb(255,95,0);
+            background: linear-gradient(90deg, rgba(255,95,0,1) 40%, rgba(255,255,255,1) 100%);
+        }
+
+        .title-menu{
+            display: flex;
+            width: 80%;
+            font-size: 30px;
+            margin: auto;
+            margin-top: 100px;
+            justify-content:center;
+            font-family: 'Poppins', sans-serif;
+            animation-name: title-menu;
+            animation-duration: 1s;
+            color: white;
+        }
+        
+        .title-menu__texto{
+            display: flex;
+            width: 80%;
+            font-size: 15px;
+            margin: auto;
+            padding-bottom: 10px;
+            justify-content:center;
+            font-family: 'Poppins', sans-serif;
+            animation-name: title-menu;
+            animation-duration: 1s;
+            color: white;
+        }
+        
+        @keyframes title-menu{
+            0%{
+                opacity: 0%;
+                transform: translate(-500px, 0);
+            }
+        
+            100%{
+                opacity: 100%;
+                transform: translate(0, 0);
+            }
+        }
+        
+        #menu{
+            display: grid;
+            grid-template-columns: 90%;
+            grid-template-rows: auto;
+            gap: 50px;
+            justify-content: center;
+            width: 90%;
+            margin: auto;
+            grid-area: menu;
+        }
+        
+        #menu-picada{
+            display: grid;
+            grid-template-columns: 90%;
+            grid-template-rows: auto;
+            gap: 50px;
+            justify-content: center;
+            width: 90%;
+            margin: auto;
+            grid-area: picada;
+        }
+        
+        #menu-bebidas{
+            display: grid;
+            grid-template-columns: 90%;
+            grid-template-rows: auto;
+            gap: 50px;
+            justify-content: center;
+            width: 90%;
+            margin: auto;
+            grid-area: bebidas;
+        }
+        
+        #menu-cervezas{
+            display: grid;
+            grid-template-columns: 90%;
+            grid-template-rows: auto;
+            gap: 50px;
+            justify-content: center;
+            width: 90%;
+            margin: auto;
+            grid-area: cervezas;
+        }
+        
+        #menu-postres{
+            display: grid;
+            grid-template-columns: 90%;
+            grid-template-rows: auto;
+            justify-content: center;
+            width: 90%;
+            margin: auto;
+            grid-area: postres;
+        }
+        
+        .menu{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            margin: auto;
+            flex-wrap: wrap;
+        
+        
+            &__contenedor__img{
+                display: flex;
+                width: 50%;
+                margin: 10px auto;	
+                flex-direction: column;
+                padding: 15px;
+            }
+        
+            &__contenedor_img:hover{
+                border-radius: 20px;
+            }
+                
+            &__img{
+                display: flex;
+                width: 100%;
+                margin: auto;
+                object-fit: cover;
+                border-radius: 20px;
+            }
+        
+            &__contenedor__img:hover{
+                transform: scale(1.1);
+                transition-duration: 0.5s;
+            }
+        
+            &__contenedor__img:hover > &__img__texto__descripcion{
+                display: flex;
+                opacity: 94%;
+                align-items: center;
+                height: 90%;
+                width: 88%;
+                border-radius: 20px;
+                transition-duration: 0.6s;
+            }
+        
+            @keyframes menu{
+                0%{
+                    box-shadow: 0%;
+                }
+                100%{
+                    box-shadow: 100%;
+                }
+            }
+        
+            &__img__texto{
+                display: flex;
+                width: 100%;
+                margin: 15px auto;
+                font-size: 15px;
+                justify-content: center;
+                text-align: center;
+                font-family: 'Sintony', sans-serif;
+            }
+        
+            &__img__texto__descripcion{
+                display: block;
+                position: absolute;
+                text-align:start;
+                justify-content: center;
+                width: 100px;
+                opacity: 0%;
+                height: 120px;
+                font-family: 'Sintony', sans-serif;
+                font-size: 12px;
+                line-height: 1.7;
+            }
+    }
+    
+    
+    /* ------------- SUCURSAL ------------- */
+    
+    
+    #local-sucursal{
+        padding-top: 70px;
+    }
+
+    .local{
+        background-color: white;
+    }
+    
+    .local-mapa{
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        background-color: whitwhiteesmoke;
+        margin: 10px auto 0;
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+        
+            &__mapa{
+                width: 100%;
+                border-radius: 20px;
+            }
+    }
+
+
+    /* ------------- PROMOCIONES ------------- */
+    
+    .promo-titulo{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin:auto;
+        padding: 130px 0 0 0;
+        justify-content:start;
+        background: rgb(255,95,0);
+        background: linear-gradient(90deg, rgba(255,95,0,1) 40%, rgba(255,255,255,1) 100%);
+        font-family: 'Poppins', sans-serif;
+        animation-name: title-menu;
+        animation-duration: 1s
+        
+    }
+
+    @keyframes title-menu{
+        0%{
+            opacity: 0%;
+            transform: translate(-500px, 0);
+        }
+
+        100%{
+            opacity: 100%;
+            transform: translate(0, 0);
+        }
+    }
+
+    .promo-titulo__texto{
+        display: flex;
+        width: 80%;
+        margin-top: 100px;
+        margin: auto;
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        justify-content:center;
+    }
+
+    .promo{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+        flex-wrap: wrap;
+
+
+            &__contenedor{
+                display: flex;
+                width: 90%;
+                margin: auto;	
+                padding: 15px 0;
+            }
+
+            &__img{
+                display: flex;
+                width: 100%;
+                margin: auto;
+                object-fit: cover;
+                border-radius: 15px;
+            }
+
+            &__img:hover{
+                transform: scale(1.1);
+            }
+
+            .menu-img h1{
+                display: flex;
+                width: 100%;
+                margin: 15px auto;
+                font-size: 25px;
+                justify-content: center;
+                text-align: center;
+                font-family: 'Poppins', sans-serif;
+            }
+    }
+
+   
+    /* ------------- CONTACTO ------------- */
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+            
+            &__titulo{
+                width: 95%;
+                margin: auto;
+                text-align: center;
+                font-size: 25px;
+                margin: 140px auto 20px;
+                font-family: 'Poppins', sans-serif;
+                background-color: #ff5f00;
+                color: white;
+            }
+        
+            &__contenedor{
+                display: flex;
+                flex-direction: column;
+                width: 75%;
+                margin: 0 auto 30px;
+            }
+        
+            &__contenedor__titulo{
+                display: flex;
+                width: 100%;
+                margin: 13px auto 0;      
+            }
+        
+            &__contenedor__input{
+                flex-direction: column;
+                width: 100%;
+                margin: 5px auto;
+                border-radius: 5px;
+                height: 7vh;
+                padding: 10px;
+                cursor: pointer;
+                font-family: 'Sintony', sans-serif;
+            }
+        
+            &__contenedor__textarea{
+                width: 100%;
+                margin: 5px auto;
+                border-radius: 5px;
+                padding: 10px;
+                cursor: pointer;
+                font-family: 'Sintony', sans-serif;
+            }
+        
+            &__contenedor__boton{
+                width: 100%;
+                margin: 15px auto 40px;
+                height: 7vh;
+                border-radius: 5px;
+                font-size: 25px;
+                cursor: pointer;
+                font-family: 'Poppins', sans-serif;
+            }
+
+        }
+
+/* ------------- HOME RESPONSIVE DESKTOP ------------- */
+
+@media screen and (min-width:1276px){
+
+    #carouselExampleIndicators{
+        display: flex;
+        margin-top: 100px;
+        width: 100%;
+        height: 70%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        object-fit: cover;
+    }
+
     .img-index{
         width: 100%;
-        height: 60vh;
-            
-            &__img{
+        height: 87vh;
+
+            &__img {
                 width: 100%;
-                height: 60vh;
-                margin-top: 35px;
+                height: 100vh;
+                margin: auto;
             }
     }
 
     .local{
+        flex-direction: row;
+        width: 90%;
         margin: auto;
-        align-items: center;
-        width: 95%;
-        background-color: whitesmoke;
 
-            &__contenedor{
-                width: 90%;
+            &__contenedor__img{
+                width: 70%;
+                margin: auto 40px;
             }
-        
-            &__img {
+
+            &__contenedor__info{
+                width: 30%;
+                margin: auto 40px;
+            }
+
+            &__img{
                 width: 100%;
+                margin: 0;
             }
 
             &__titulo{
-                font-size: 40px;
+                padding-top: 0;
+                font-size: 50px;
             }
 
-            &__subtitulo{
+            &__subtitulo{          
                 font-size: 20px;
             }
 
             &__horario{
-                margin: auto;
                 font-size: 20px;
             }
 
             &__reserva{
                 padding-top: 40px;
             }
-    
+
             &__reserva__titulo{
                 font-size: 30px;
             }
-    
+
             &__reserva__texto{
                 padding: 10px;
             }
-    
+
             &__reserva__boton{
                 padding: 13px;
                 border-radius: 5px;
             }
+
+    }
+
+    .contenido-destacado{
+        display: flex;
+        width: 80%;
+        margin: 90px auto 0;
+
+
+            &__contenedor{
+                display: flex;
+                margin: auto;
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            &__texto1{
+                font-size: 40px;
+            }
+    }
+
+    .contenido-destacado-img{
+            flex-direction:row;
+            flex-wrap: nowrap;
+        
+    }
+    }
+
+@media screen and (min-width:780px) and (max-width:1275px){
+    
+    #carouselExampleIndicators{
+        margin-top: 100px;
+    }
+
+    .img-index{
+        width: 100%;
+        height: 100vh;
+    
+            &__img {
+                width: 100%;
+                height: 100vh;
+                margin: auto;
+            }
+    }
+
+    .local{
+        flex-direction: row;
+        width: 95%;
+        margin: auto;
+    
+            &__contenedor{
+                width: 100%;
+                padding: 10px;
+            }
+    
+            &__img{
+                width: 100%;
+                margin: 0;
+            }
+    
+            &__titulo{
+                padding-top: 0;
+                font-size: 35px;
+            }
+    
+            &__subtitulo{          
+                font-size: 17px;
+            }
+    
+            &__horario{
+                font-size: 17px;
+            }
+    
+            &__reserva{
+                padding-top: 30px;
+            }
+    
+    }
+
+    .contenido-destacado{
+        display: flex;
+        width: 80%;
+        margin: 70px auto 0;
+    
+            &__texto1{
+                font-size: 30px;
+            }
     }
     
+    .contenido-destacado-img{
+            flex-direction:row;
+            flex-wrap: nowrap;
+           
+    }
+
 }
-    
-    /* ------------- MENU RESPONSIVE ------------- */
-    
-    @media screen and (max-width: 650px) {
-    
-    .sub-nav__links{
-            width: 25%;
-            display: flex;
-            margin: auto;
-            justify-content: center;
+
+/* ------------- MENÚ RESPONSIVE DESKTOP ------------- */
+
+@media screen and (min-width: 1251px) {
+
+    .sub-nav{
+
+        &__links{
+            width: 65%;
         }
 
-    .sub-nav__link__texto{
-        font-size: 10px;
+        &__link__texto{
+            font-size: 15px;
+        }
+
+        &__link__texto:hover{
+            color: black;
+        }
+
+        &__link__icon{
+            display: flex;
+        }
     }
 
-    .sub-nav__link__icon{
-        display: none;
+    .title-menu{
+        font-size: 50px;
+        justify-content:start;
     }
+
+    .title-menu__texto{
+        font-size: 20px;
+        justify-content:start;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: auto;
+        flex-wrap: wrap;
+
+
+            &__contenedor__img{
+                width: 23%;
+            }
+
+            &__contenedor_img:hover{
+                border-radius: 20px;
+            }
+            
+            &__img{
+                width: 75%;
+            }
+
+            &__img__texto{
+                font-size: 20px;
+            }
+
+            &__img__texto__descripcion{
+                width: 15em;
+                font-size: 17px;
+            }
+    }
+    }
+
+@media screen and (min-width:601px) and (max-width: 1250px) {
+        
+    .sub-nav{
+        display: flex;
+        flex-direction: column;
+        
+        &__links{
+            width: 50%;
+            margin: auto;
+            justify-content: center;
+            font-size: 15px;
+        }
+
+        &__link__texto{
+            font-size: 15px;
+        }
+
+        &__link{
+            width: 100%;
+        }
+    }    
     
         .title-menu{
-            font-size: 30px;
             justify-content: center;
+            font-size: 50px;
         }
 
         .title-menu__texto{
-            font-size: 15px;
             justify-content: center;    
+            font-size: 20px;
         }
     
     .menu{
@@ -925,7 +1077,7 @@ $color4: #ff8e4a;
         }
     
         &__contenedor__img{
-            width: 50%;
+            width: 30%;
         }
     
         &__img{
@@ -942,222 +1094,88 @@ $color4: #ff8e4a;
         }
     }
     }
-    
-    @media screen and (min-width:651px) and (max-width: 1250px) {
-        
-    .sub-nav{
-        display: flex;
-        flex-direction: column;
-        
-        &__links{
-            width: 20%;
-            margin: auto;
-            justify-content: center;
-            font-size: 15px;
-        }
 
-        &__link{
-            width: 100%;
-        }
-    }    
-    
-        .title-menu{
-            justify-content: center;
-        }
+/* ------------- SUCURSAL RESPONSIVE DESKTOP------------- */
 
-        .title-menu__texto{
-            justify-content: center;    
-        }
-    
-    .menu{
-        
-    
-        &__contenedor{
-            width: 50%;
-            margin-right: 20px;
-        }
-    
-        &__contenedor__img{
-            width: 30%;
-        }
-    
-        &__img{
-            width: 100%;
-        }
-    
-        &__img__texto{
-            font-size: 15px;
-        }
-    
-        &__img__texto__descripcion{
-            width: 100px;
-            font-size: 10px;
-        }
-    }
-    }
-    /* ------------- SUCURSAL RESPONSIVE ------------- */
-    
-    @media screen and (max-width: 600px) {
-    
-    .local{
-        background-color: white;
-        width: 100%;
-        margin-top: -50px;
+@media screen and (min-width: 600px) {
+
+    #local-sucursal{
+        padding-top: 150px;
     }
 
-    .local-mapa{
-        display: flex;
-        flex-direction: column;
-        width: 85%;
-        background-color: whitesmoke;
-        margin: 10px auto 0;
-        border-radius: 20px;
-        justify-content: center;
-        align-items: center;
-        
-            &__mapa{
-                width: 100%;
-                border-radius: 20px;
-            }
-    }
-    }
+}
 
-    @media screen and (min-width:601px) and (max-width: 1250px) {
-        
-        .local{
-            background-color: white;
-            width: 85%;
-            flex-direction: column;
-        }
-    
-        .local-mapa{
-            display: flex;
-            flex-direction: column;
-            width: 85%;
-            background-color: whitesmoke;
-            margin: 10px auto 0;
-            border-radius: 20px;
-            justify-content: center;
-            align-items: center;
-            
-                &__mapa{
-                    width: 100%;
-                    border-radius: 20px;
-                }
-        }
-        
+/* ------------- PROMOCIONES RESPONSIVE DESKTOP ------------- */
 
-    }    
-    /* ------------- PROMOCIONES RESPONSIVE ------------- */
-    
-    @media screen and (max-width: 600px) {
+@media screen and (min-width: 1201px) {
     
     .promo-titulo{
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        margin: auto;
-        font-family: 'Poppins', sans-serif;
-    
+        margin-bottom: 40px;
+
             &__texto{
-                display: flex;
-                width: 100%;
                 margin: auto;
-                padding: 130px 0 0 0;
                 text-align: center;
-                justify-content: center;
-                font-size: 40px;
+                justify-content: start;
+                font-size: 60px;
             }
     }
     
     .promo{
-        display: flex;
-        width: 80%;
-        margin: auto;
-        flex-wrap: wrap;
+        flex-direction: row;
     
             &__contenedor{
-                display: flex;
-                width: 100%;
-                margin: auto;	
-                flex-direction: column;
-                padding: 15px;
-            }
-            
-            &__img{
-                display: flex;
-                width: 100%;
-                margin: auto;
-                object-fit: cover;
-                border-radius: 20px;
+                width: 30%;
+                padding: 15px 0;
             }
         }
+}
+
+@media screen and (min-width:600px) and (max-width:1200px){
+
+    .promo-titulo{
+    
+        &__texto{
+            justify-content: center;
+            font-size: 50px;
+        }
+}
+
+    .promo{
+        flex-direction: row;
+
+            &__contenedor{
+                width: 50%;
+                padding: 15px 15px;
+            }
     }
 
-    @media screen and (min-width:601px) and (max-width: 1200px) {
-    
-        .promo-titulo{
-            display: flex;
-            flex-direction: column;
-            width: 80%;
-            margin: auto;
-            font-family: 'Bebas Neue', cursive;
-        
-                &__texto{
-                    display: flex;
-                    width: 100%;
-                    margin: auto;
-                    padding: 130px 0 0 0;
-                    text-align: center;
-                    justify-content: center;
-                }
-        }
-        
-        .promo{
-            display: flex;
-            width: 80%;
-            margin: auto;
-            flex-wrap: wrap;
-        
-                &__contenedor{
-                    display: flex;
-                    width: 50%;
-                    margin: auto;	
-                    flex-direction: column;
-                    padding: 15px;
-                }
-                
-                &__img{
-                    display: flex;
-                    width: 100%;
-                    margin: auto;
-                    object-fit: cover;
-                    border-radius: 20px;
-                }
-            }
-        }
-    
-    
-    /* ------------- CONTACTO RESPONSIVE ------------- */
-    
-    @media screen and (max-width: 600px) {
-        
-        .form{
-        
-            .form__titulo{
-                width: 95%;
-                font-size: 30px;
-            }
+}
+
+/* ------------- CONTACTO RESPONSIVE DESKTOP ------------- */
+
+@media screen and (min-width: 600px) {
+
+    .form{
+        width: 100%;
+
             
-            .form__contenedor{
-                width: 75%;
-            }
-            
-            .form__contenedor__boton{
-                width: 100%;
-            }
-            
-            /*.form__contenedor__boton:active{
-            }*/
+        &__titulo{
+            width: 50%;
+            font-size: 35px;
         }
+        
+        &__contenedor{
+            width: 50%;
         }
+        
+        &__contenedor__boton{
+            width: 30%;
+            border: none;
+        }
+
+        &__contenedor__boton:hover{
+            border: #ff5f00 2px solid;
+        }
+        
+    }
+}
