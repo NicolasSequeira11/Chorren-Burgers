@@ -87,21 +87,11 @@ $color4: #ff8e4a;
         width: 100%;
         margin: auto;
         padding: 15px;
-        border: 3px solid black;
 
     
-            &__contenedor__img{
+            &__contenedor{
                 display: flex;
-                width: 90%;
                 flex-direction: column;
-            }
-
-            &__contenedor__info{
-                display: flex;
-                width: 90%;
-                flex-direction: column;
-                padding: 30px;
-                background-color: white;
             }
     
             &__img{
@@ -112,53 +102,18 @@ $color4: #ff8e4a;
                 justify-content: center;
             }
     
-            &__titulo{
-                display: flex;
-                margin: auto;
-                justify-content: center;
-                text-align: center;
-                width: 100%;
-                margin-top: 20px;
-                font-family: 'Poppins', sans-serif;
-                font-size: 30px;
-                background-color:#ff5f00;
-                color: white;
-            }
-    
-            &__subtitulo{
-                display: flex;
-                margin: auto;
-                text-align: center;
-                justify-content: center;
-                width: 100%;
-                font-family: 'Poppins', sans-serif;
-                font-size: 20px;
-                color:black;
-                padding: 10px;
-            }
-    
-            &__horario{
-                display: flex;
-                text-align: center;
-                justify-content: center;
-                margin: auto;
-                width: 100%;
-                font-family: 'Poppins', sans-serif;
-                font-size: 20px;
-                padding: 10px;
-                color:black;
-            }
-    
             &__reserva{
+                width: 100%;
                 display: flex;
                 flex-direction: column;
                 margin: auto;
                 justify-content: center;
                 text-align: center;
-                padding-top: 40px;
+                padding-top: 10px;
             }
     
             &__reserva__titulo{
+                width: 100%;
                 font-family: 'Poppins', sans-serif;
                 font-size: 30px;
                 background-color:#ff5f00;
@@ -180,24 +135,13 @@ $color4: #ff8e4a;
                 border-radius: 5px;
                 font-family: 'Sintony', sans-serif;
             }
-
-            &__icon__contenedor{
-                display: flex;
-                width: 100%;
-            }
-
-            &__icon{
-                display: flex;
-                padding: 5px;
-                width: 30%;
-            }
     
     }
     
     .contenido-destacado{
         display: flex;
         width: 80%;
-        margin: 90px auto 0;
+        margin: 25px auto 0;
     
     
             &__contenedor{
@@ -637,7 +581,62 @@ $color4: #ff8e4a;
     }
 
     .local{
-        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        padding: 15px;
+
+    
+            &__contenedor{
+                display: flex;
+                flex-direction: column;
+            }
+    
+            &__img{
+                display: flex;
+                width: 100%;
+                border-radius: 5px;
+                margin: 15% auto 0;
+                justify-content: center;
+            }
+    
+            &__reserva{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                justify-content: center;
+                text-align: center;
+                padding-top: 10px;
+            }
+    
+            &__reserva__titulo{
+                width: 100%;
+                font-family: 'Poppins', sans-serif;
+                font-size: 30px;
+                background-color:#ff5f00;
+                color: white;
+            }
+    
+            &__reserva__texto{
+                font-family: 'Sintony', sans-serif;
+                padding: 10px;
+            }
+    
+            &__reserva__boton{
+                background-color: #0dc143;
+                text-decoration: none;
+                margin: auto;
+                text-align: center;
+                color: white;
+                padding: 13px;
+                border-radius: 5px;
+                font-family: 'Sintony', sans-serif;
+            }
+    
     }
     
     .local-mapa{
@@ -826,58 +825,6 @@ $color4: #ff8e4a;
             }
     }
 
-    .local{
-        flex-direction: row;
-        width: 90%;
-        margin: auto;
-
-            &__contenedor__img{
-                width: 70%;
-                margin: auto 40px;
-            }
-
-            &__contenedor__info{
-                width: 30%;
-                margin: auto 40px;
-            }
-
-            &__img{
-                width: 100%;
-                margin: 0;
-            }
-
-            &__titulo{
-                padding-top: 0;
-                font-size: 50px;
-            }
-
-            &__subtitulo{          
-                font-size: 20px;
-            }
-
-            &__horario{
-                font-size: 20px;
-            }
-
-            &__reserva{
-                padding-top: 40px;
-            }
-
-            &__reserva__titulo{
-                font-size: 30px;
-            }
-
-            &__reserva__texto{
-                padding: 10px;
-            }
-
-            &__reserva__boton{
-                padding: 13px;
-                border-radius: 5px;
-            }
-
-    }
-
     .contenido-destacado{
         display: flex;
         width: 80%;
@@ -918,40 +865,6 @@ $color4: #ff8e4a;
                 height: 100vh;
                 margin: auto;
             }
-    }
-
-    .local{
-        flex-direction: row;
-        width: 95%;
-        margin: auto;
-    
-            &__contenedor{
-                width: 100%;
-                padding: 10px;
-            }
-    
-            &__img{
-                width: 100%;
-                margin: 0;
-            }
-    
-            &__titulo{
-                padding-top: 0;
-                font-size: 35px;
-            }
-    
-            &__subtitulo{          
-                font-size: 17px;
-            }
-    
-            &__horario{
-                font-size: 17px;
-            }
-    
-            &__reserva{
-                padding-top: 30px;
-            }
-    
     }
 
     .contenido-destacado{
@@ -1100,7 +1013,45 @@ $color4: #ff8e4a;
 @media screen and (min-width: 600px) {
 
     #local-sucursal{
-        padding-top: 150px;
+        padding-top: 120px;
+    }
+
+    .local{
+        flex-direction: column;
+        width: 85%;
+        margin: auto;
+
+            &__contenedor{
+                width: 100%;
+                flex-direction: column;
+            }
+
+            &__img{
+                width: 100%;
+                margin: auto;
+            }
+            
+            &__reserva{
+                width: 100%;
+            }
+
+            &__reserva__titulo{
+                width: 100%;
+                margin: auto;
+                font-size: 35px;
+            }
+
+            &__reserva__texto{
+                font-size: 20px;
+                padding: 10px;
+            }
+
+            &__reserva__boton{
+                padding: 13px;
+                font-size: 20px;
+                border-radius: 5px;
+            }
+
     }
 
 }

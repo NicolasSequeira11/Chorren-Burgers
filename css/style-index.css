@@ -451,10 +451,10 @@
 }
 
 /* COLOR SUCURSAL */
-.sucursal {
+.local {
   background-color: #ffffff;
 }
-.sucursal__titulo {
+.local__titulo {
   color: #EC4E0B;
 }
 
@@ -574,19 +574,10 @@
   width: 100%;
   margin: auto;
   padding: 15px;
-  border: 3px solid black;
 }
-.local__contenedor__img {
+.local__contenedor {
   display: flex;
-  width: 90%;
   flex-direction: column;
-}
-.local__contenedor__info {
-  display: flex;
-  width: 90%;
-  flex-direction: column;
-  padding: 30px;
-  background-color: white;
 }
 .local__img {
   display: flex;
@@ -595,49 +586,17 @@
   margin: 15% auto 0;
   justify-content: center;
 }
-.local__titulo {
-  display: flex;
-  margin: auto;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  margin-top: 20px;
-  font-family: "Poppins", sans-serif;
-  font-size: 30px;
-  background-color: #ff5f00;
-  color: white;
-}
-.local__subtitulo {
-  display: flex;
-  margin: auto;
-  text-align: center;
-  justify-content: center;
-  width: 100%;
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  color: black;
-  padding: 10px;
-}
-.local__horario {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  margin: auto;
-  width: 100%;
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  padding: 10px;
-  color: black;
-}
 .local__reserva {
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin: auto;
   justify-content: center;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 10px;
 }
 .local__reserva__titulo {
+  width: 100%;
   font-family: "Poppins", sans-serif;
   font-size: 30px;
   background-color: #ff5f00;
@@ -657,20 +616,11 @@
   border-radius: 5px;
   font-family: "Sintony", sans-serif;
 }
-.local__icon__contenedor {
-  display: flex;
-  width: 100%;
-}
-.local__icon {
-  display: flex;
-  padding: 5px;
-  width: 30%;
-}
 
 .contenido-destacado {
   display: flex;
   width: 80%;
-  margin: 90px auto 0;
+  margin: 25px auto 0;
 }
 .contenido-destacado__contenedor {
   display: flex;
@@ -1055,7 +1005,54 @@
 }
 
 .local {
-  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  padding: 15px;
+}
+.local__contenedor {
+  display: flex;
+  flex-direction: column;
+}
+.local__img {
+  display: flex;
+  width: 100%;
+  border-radius: 5px;
+  margin: 15% auto 0;
+  justify-content: center;
+}
+.local__reserva {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  padding-top: 10px;
+}
+.local__reserva__titulo {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  background-color: #ff5f00;
+  color: white;
+}
+.local__reserva__texto {
+  font-family: "Sintony", sans-serif;
+  padding: 10px;
+}
+.local__reserva__boton {
+  background-color: #0dc143;
+  text-decoration: none;
+  margin: auto;
+  text-align: center;
+  color: white;
+  padding: 13px;
+  border-radius: 5px;
+  font-family: "Sintony", sans-serif;
 }
 
 .local-mapa {
@@ -1219,46 +1216,6 @@
     height: 100vh;
     margin: auto;
   }
-  .local {
-    flex-direction: row;
-    width: 90%;
-    margin: auto;
-  }
-  .local__contenedor__img {
-    width: 70%;
-    margin: auto 40px;
-  }
-  .local__contenedor__info {
-    width: 30%;
-    margin: auto 40px;
-  }
-  .local__img {
-    width: 100%;
-    margin: 0;
-  }
-  .local__titulo {
-    padding-top: 0;
-    font-size: 50px;
-  }
-  .local__subtitulo {
-    font-size: 20px;
-  }
-  .local__horario {
-    font-size: 20px;
-  }
-  .local__reserva {
-    padding-top: 40px;
-  }
-  .local__reserva__titulo {
-    font-size: 30px;
-  }
-  .local__reserva__texto {
-    padding: 10px;
-  }
-  .local__reserva__boton {
-    padding: 13px;
-    border-radius: 5px;
-  }
   .contenido-destacado {
     display: flex;
     width: 80%;
@@ -1290,32 +1247,6 @@
     width: 100%;
     height: 100vh;
     margin: auto;
-  }
-  .local {
-    flex-direction: row;
-    width: 95%;
-    margin: auto;
-  }
-  .local__contenedor {
-    width: 100%;
-    padding: 10px;
-  }
-  .local__img {
-    width: 100%;
-    margin: 0;
-  }
-  .local__titulo {
-    padding-top: 0;
-    font-size: 35px;
-  }
-  .local__subtitulo {
-    font-size: 17px;
-  }
-  .local__horario {
-    font-size: 17px;
-  }
-  .local__reserva {
-    padding-top: 30px;
   }
   .contenido-destacado {
     display: flex;
@@ -1422,7 +1353,37 @@
 /* ------------- SUCURSAL RESPONSIVE DESKTOP------------- */
 @media screen and (min-width: 600px) {
   #local-sucursal {
-    padding-top: 150px;
+    padding-top: 120px;
+  }
+  .local {
+    flex-direction: column;
+    width: 85%;
+    margin: auto;
+  }
+  .local__contenedor {
+    width: 100%;
+    flex-direction: column;
+  }
+  .local__img {
+    width: 100%;
+    margin: auto;
+  }
+  .local__reserva {
+    width: 100%;
+  }
+  .local__reserva__titulo {
+    width: 100%;
+    margin: auto;
+    font-size: 35px;
+  }
+  .local__reserva__texto {
+    font-size: 20px;
+    padding: 10px;
+  }
+  .local__reserva__boton {
+    padding: 13px;
+    font-size: 20px;
+    border-radius: 5px;
   }
 }
 /* ------------- PROMOCIONES RESPONSIVE DESKTOP ------------- */
