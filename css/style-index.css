@@ -317,11 +317,11 @@
     padding: 0;
   }
   .footer__horario__titulo {
-    font-size: 2.7em;
+    font-size: 25px;
   }
   .footer__horario__texto {
     text-align: center;
-    font-size: 1.3em;
+    font-size: 17px;
   }
   .footer-info {
     flex-direction: column;
@@ -371,11 +371,11 @@
     padding: 0;
   }
   .footer__horario__titulo {
-    font-size: 2.7em;
+    font-size: 30px;
   }
   .footer__horario__texto {
     text-align: center;
-    font-size: 1.3em;
+    font-size: 20px;
   }
   .footer-info {
     flex-direction: column;
