@@ -12,6 +12,8 @@
 	<title>Promociones</title>
 	<meta name="description" content="Las mejores hamburguesas de Salinas, Uruguay. Envíos desde peaje pando hasta parque de plata pasando por Neptunia, Pinamar, Marindia, Villa Argentina, Atlantida, Las toscas">
 	<meta name="keywords" content="Hamburguesas Salinas, envio gratis, hamburgueseria, hamburgueseria parque del plata, hamburgueseria atlantida, hamburgueseria pinamar, canelones, uruguay">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 	<link rel="stylesheet" type="text/css" href="../css/style-index.css">
 	<link rel="shortcut icon" href="../imagenes/favicon.ico">
 </head>
@@ -26,7 +28,7 @@
 					<li class="nav__link"><a class="nav__link__texto" href="sucursal.html">SUCURSAL</a></li>
 					<li class="nav__link"><a class="nav__link__texto" href="promo.html">PROMOCIONES</a></li>
 					<li class="nav__link"><a class="nav__link__texto" href="contacto.html">CONTACTO</a></li>
-					<a class="pedido__contenedor" href="https://wa.me/59899043084?" target="_blank"><div class="pedido"> <h1 class="pedido__texto">PEDIR ONLINE</h1></div></a>
+					<a class="pedido__contenedor" href="https://wa.me/59899043084?" target="_blank"><div class="pedido"> <h2 class="pedido__texto">PEDIR ONLINE</h2></div></a>
 				</ul>
 				<button class="ham" type="button">
 					<span class="ham__br ham__br--1"></span>
@@ -37,40 +39,48 @@
 	</header>
 	<script src="../Javascript/menu.js"></script>
 
-	<div class="promo-titulo"><h1 class="promo-titulo__texto">PARA COMPARTIR</h1></div>
-	<div id="hamburguesas" class="promo">
-		<div class="promo__contenedor"><img class="promo__img" src="../imagenes/promo/americanbbqx2.png" alt="Chorren Burgers Promocion"></div>
-		<div class="promo__contenedor"><img class="promo__img" src="../imagenes/promo/clasicax2.png" alt="Chorren Burgers Promocion"></div>
-		<div class="promo__contenedor"><img class="promo__img" src="../imagenes/promo/crunchybbqx2.png" alt="Chorren Burgers Promocion"></div>
+	<section>
+		<div class="promo-titulo"><h1 data-aos="fade-right" class="promo-titulo__texto">PARA COMPARTIR</h1></div>
+		
+		<div id="hamburguesas" class="promo">
+			<div class="promo__contenedor"><img class="promo__img" src="../imagenes/promo/americanbbqx2.png" data-aos="zoom-in" alt="Chorren Burgers Promocion"></div>
+			<div class="promo__contenedor"><img class="promo__img" src="../imagenes/promo/clasicax2.png" data-aos="zoom-in" alt="Chorren Burgers Promocion"></div>
+			<div class="promo__contenedor"><img class="promo__img" src="../imagenes/promo/crunchybbqx2.png" data-aos="zoom-in" alt="Chorren Burgers Promocion"></div>
 
-		<div class="promo__contenedor"><img class="promo__img" src="../imagenes/promo/oklahomax2.png" alt="Chorren Burgers Promocion"></div>
-		<div class="promo__contenedor"><img class="promo__img" src="../imagenes/promo/crunchybbqstella.png" alt="Chorren Burgers Promocion"></div>
-		<div class="promo__contenedor"><img class="promo__img" src="../imagenes/promo/simplex2pepsi.png" alt="Chorren Burgers Promocion"></div>
-	</div>
+			<div class="promo__contenedor"><img class="promo__img" src="../imagenes/promo/oklahomax2.png" data-aos="zoom-in" alt="Chorren Burgers Promocion"></div>
+			<div class="promo__contenedor"><img class="promo__img" src="../imagenes/promo/crunchybbqstella.png" data-aos="zoom-in" alt="Chorren Burgers Promocion"></div>
+			<div class="promo__contenedor"><img class="promo__img" src="../imagenes/promo/simplex2pepsi.png" data-aos="zoom-in" alt="Chorren Burgers Promocion"></div>
+		</div>
+	</section>
 
 	<footer id="footer" class="footer">
 		<div class="footer__logo-contenedor">
-			<div class="footer__contenedor"><img class="footer__logo-img" src="../imagenes/logopng.png" alt=""></div>
-			
-			<div class="footer__contenedor"><div class="footer__horario"> <h2 class="footer__horario__titulo">HORARIOS</h2> <p class="footer__horario__texto">Miércoles a Lunes <br> 20:00 a 23:45</p></div></div>
-			
-			<div class="footer__contenedor"><div class="footer__horario"> <h2 class="footer__horario__titulo">DIRECCIÓN</h2> <p class="footer__horario__texto">Salinas, Km 38.300 <br> Sobre Interbalnearia</p></div></div>
-			
-			<div class="footer__contenedor"><div class="footer__horario"> <h2 class="footer__horario__titulo">ENVÍOS</h2> <p class="footer__horario__texto">Delivery y take away <br> Desde el peaje hasta parque del plata</p></div></div>
-			
-			<div class="footer__contenedor"><div class="footer__horario"> <h2 class="footer__horario__titulo">SíGUENOS</h2> <div class="footer-info__contenedor">
-				<a href="https://www.instagram.com/chorrenburgers/" target="_blank"><img class="footer-info__img" src="../imagenes/icon/icon-instagram.png" alt=""></a>
-				<a href="https://wa.me/59899043084?" target="_blank"><img class="footer-info__img" src="../imagenes/icon/icon-whatsapp.png" alt=""></a>
-				<a href="https://www.facebook.com/profile.php?id=100065198092474" target="_blank"><img class="footer-info__img" src="../imagenes/icon/icon-facebook.png" alt=""></a>
-				<a href="https://www.tiktok.com/@chorrennburgers" target="_blank"><img class="footer-info__img" src="../imagenes/icon/icon-tiktok.png" alt=""></a></div>
-			
+
+			<div class="footer__contenedor"><img class="footer__logo-img" src="../imagenes/logopng.png" alt="Chorren Burgers Logo"></div>			
+			<div class="footer__contenedor"><div class="footer__horario"> <h2 class="footer__horario__titulo">HORARIOS</h2> <p class="footer__horario__texto">Miércoles a Lunes <br> 20:00 a 23:45hs</p></div></div>			
+			<div class="footer__contenedor"><div class="footer__horario"> <h2 class="footer__horario__titulo">DIRECCIÓN</h2> <p class="footer__horario__texto">Salinas, Km 38.300 <br> Sobre Interbalnearia</p></div></div>			
+			<div class="footer__contenedor"><div class="footer__horario"> <h2 class="footer__horario__titulo">ENVÍOS</h2> <p class="footer__horario__texto">Delivery desde el peaje hasta Parque del Plata</p></div></div>			
+			<div class="footer__contenedor"><div class="footer__horario"> <h2 class="footer__horario__titulo">SíGUENOS</h2>
+				
+				<div class="footer-info__contenedor">
+					<a href="https://www.instagram.com/chorrenburgers/" target="_blank"><img class="footer-info__img" src="../imagenes/icon/icon-instagram.png" alt="Chorren Burgers Instagram"></a>
+					<a href="https://wa.me/59899043084?" target="_blank"><img class="footer-info__img" src="../imagenes/icon/icon-whatsapp.png" alt="Chorren Burgers Whatsapp"></a>
+					<a href="https://www.facebook.com/profile.php?id=100065198092474" target="_blank"><img class="footer-info__img" src="../imagenes/icon/icon-facebook.png" alt="Chorren Burgers Facebook"></a>
+					<a href="https://www.tiktok.com/@chorrennburgers" target="_blank"><img class="footer-info__img" src="../imagenes/icon/icon-tiktok.png" alt="Chorren Burgers Tiktok"></a>
+				</div>
 			</div>
 		</div>
 		</div>
-		<div class="footer-info">
-			<p class="footer-info__texto--1">Copyright © 2022 Chorren Burgers </p>
-			<p class="footer-info__texto--2">Diseño y Desarrollo Web por Nicolas Sequeira</p>
-		</div>
+			<div class="footer-info">
+				<p class="footer-info__texto--1">Copyright © 2022 Chorren Burgers </p>
+				<p class="footer-info__texto--2">Diseño y Desarrollo Web por Nicolas Sequeira</p>
+			</div>
 	</footer>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			duration: 1000,
+		});
+	  </script>
 </body>
 </html>

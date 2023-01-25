@@ -1,8 +1,3 @@
-$color1: #ff5f00;
-$color2: #000000;
-$color3: #ffffff;
-$color4: #ff8e4a;
-
 @use 'header';
 @use 'footer';
 @use 'content-color';
@@ -50,20 +45,6 @@ $color4: #ff8e4a;
         grid-area: footer;
     }
     
-    .img-index{
-        width: 100%;
-        height: 60vh;
-        margin-bottom: 10%;
-    
-        &__img {
-            width: 100%;
-            height: 60vh;
-            object-fit:cover;
-            margin-top: 35px;
-            animation-name: img-home;
-            animation-duration: 2s;
-        }
-    
         @keyframes img-home{
             0%{
                 opacity: 0%;
@@ -72,70 +53,34 @@ $color4: #ff8e4a;
                 opacity: 100%;
             }
         }
-    }
 
     #carouselExampleFade{
         grid-area: carousel;
         margin-top: 100px;
+        animation-name: img-home;
+        animation-duration: 2s;
     }
-    
-    .local{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin: auto;
-        padding: 15px;
 
-    
-            &__contenedor{
-                display: flex;
-                flex-direction: column;
-            }
-    
-            &__img{
-                display: flex;
-                width: 100%;
-                border-radius: 5px;
-                margin: 15% auto 0;
-                justify-content: center;
-            }
-    
-            &__reserva{
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                margin: auto;
-                justify-content: center;
-                text-align: center;
-                padding-top: 10px;
-            }
-    
-            &__reserva__titulo{
-                width: 100%;
-                font-family: 'Poppins', sans-serif;
-                font-size: 30px;
-                background-color:#ff5f00;
-                color: white;
-            }
-    
-            &__reserva__texto{
-                font-family: 'Sintony', sans-serif;
-                padding: 10px;
-            }
-    
-            &__reserva__boton{
-                background-color: #0dc143;
-                text-decoration: none;
-                margin: auto;
-                text-align: center;
-                color: white;
-                padding: 13px;
-                border-radius: 5px;
-                font-family: 'Sintony', sans-serif;
-            }
-    
+    @keyframes img-home{
+        0%{
+            opacity: 0%;
+        }
+        100%{
+            opacity: 100%;
+        }
+    }
+
+    .titulo-h1{
+        display: flex;
+        margin: auto;
+        width: 90%;
+        justify-content: center;
+        text-align: center;
+        margin:30px auto 0;
+        font-size: 30px;
+        font-family: 'Poppins', sans-serif;
+        animation-name: img-home;
+        animation-duration: 2s;
     }
     
     .contenido-destacado{
@@ -149,8 +94,6 @@ $color4: #ff8e4a;
                 margin: auto;
                 width: 100%;
                 justify-content: space-between;
-                background: rgb(255,95,0);
-                background: linear-gradient(90deg, rgba(255,95,0,1) 40%, rgba(255,255,255,1) 100%);
             }
     
             &__texto1{
@@ -158,12 +101,18 @@ $color4: #ff8e4a;
                 margin: auto 0;
                 font-size: 23px;
                 font-family: 'Poppins', sans-serif;
-                padding: 5px 10px;
+                padding: 10px 15px;
             }
     
             &__texto2{
                 display: flex;
                 margin: auto 0;
+                font-size: 15px;
+                padding: 5px 15px;
+            }
+
+            &__texto2:hover{
+                text-decoration: underline;
             }
 
             &__link{
@@ -362,10 +311,6 @@ $color4: #ff8e4a;
                         flex-direction: row;
                     }
         
-                    &__link__texto:hover{
-                        color: black;
-                    }
-        
                     &__link__icon{
                         display: flex;
                         align-items: center;
@@ -400,8 +345,6 @@ $color4: #ff8e4a;
         .title-menu__contenedor{
             width: 100%;
             margin: auto;
-            background: rgb(255,95,0);
-            background: linear-gradient(90deg, rgba(255,95,0,1) 40%, rgba(255,255,255,1) 100%);
         }
 
         .title-menu{
@@ -409,12 +352,10 @@ $color4: #ff8e4a;
             width: 80%;
             font-size: 30px;
             margin: auto;
-            margin-top: 100px;
+            margin-top: 80px;
             justify-content:center;
             font-family: 'Poppins', sans-serif;
-            animation-name: title-menu;
-            animation-duration: 1s;
-            color: white;
+
         }
         
         .title-menu__texto{
@@ -425,21 +366,6 @@ $color4: #ff8e4a;
             padding-bottom: 10px;
             justify-content:center;
             font-family: 'Poppins', sans-serif;
-            animation-name: title-menu;
-            animation-duration: 1s;
-            color: white;
-        }
-        
-        @keyframes title-menu{
-            0%{
-                opacity: 0%;
-                transform: translate(-500px, 0);
-            }
-        
-            100%{
-                opacity: 100%;
-                transform: translate(0, 0);
-            }
         }
         
         #menu{
@@ -535,6 +461,7 @@ $color4: #ff8e4a;
                 align-items: center;
                 height: 90%;
                 width: 88%;
+                text-align: left;
                 border-radius: 20px;
                 transition-duration: 0.6s;
             }
@@ -555,6 +482,7 @@ $color4: #ff8e4a;
                 font-size: 15px;
                 justify-content: center;
                 text-align: center;
+                line-height: 35px;
                 font-family: 'Sintony', sans-serif;
             }
         
@@ -617,8 +545,6 @@ $color4: #ff8e4a;
                 width: 100%;
                 font-family: 'Poppins', sans-serif;
                 font-size: 30px;
-                background-color:#ff5f00;
-                color: white;
             }
     
             &__reserva__texto{
@@ -627,11 +553,9 @@ $color4: #ff8e4a;
             }
     
             &__reserva__boton{
-                background-color: #0dc143;
                 text-decoration: none;
                 margin: auto;
                 text-align: center;
-                color: white;
                 padding: 13px;
                 border-radius: 5px;
                 font-family: 'Sintony', sans-serif;
@@ -663,26 +587,9 @@ $color4: #ff8e4a;
         flex-direction: column;
         width: 100%;
         margin:auto;
-        padding: 130px 0 0 0;
+        padding: 100px 0 0 0;
         justify-content:start;
-        background: rgb(255,95,0);
-        background: linear-gradient(90deg, rgba(255,95,0,1) 40%, rgba(255,255,255,1) 100%);
         font-family: 'Poppins', sans-serif;
-        animation-name: title-menu;
-        animation-duration: 1s
-        
-    }
-
-    @keyframes title-menu{
-        0%{
-            opacity: 0%;
-            transform: translate(-500px, 0);
-        }
-
-        100%{
-            opacity: 100%;
-            transform: translate(0, 0);
-        }
     }
 
     .promo-titulo__texto{
@@ -691,7 +598,6 @@ $color4: #ff8e4a;
         margin-top: 100px;
         margin: auto;
         font-size: 30px;
-        color: white;
         text-align: center;
         justify-content:center;
     }
@@ -750,8 +656,6 @@ $color4: #ff8e4a;
                 font-size: 25px;
                 margin: 140px auto 20px;
                 font-family: 'Poppins', sans-serif;
-                background-color: #ff5f00;
-                color: white;
             }
         
             &__contenedor{
@@ -814,21 +718,21 @@ $color4: #ff8e4a;
         object-fit: cover;
     }
 
-    .img-index{
-        width: 100%;
-        height: 87vh;
-
-            &__img {
-                width: 100%;
-                height: 100vh;
-                margin: auto;
-            }
+    .titulo-h1{
+        display: flex;
+        margin: auto;
+        width: 90%;
+        justify-content: center;
+        text-align: center;
+        margin: 50px auto 0;
+        font-size: 60px;
+        font-family: 'Poppins', sans-serif;
     }
 
     .contenido-destacado{
         display: flex;
         width: 80%;
-        margin: 90px auto 0;
+        margin: 50px auto 0;
 
 
             &__contenedor{
@@ -856,21 +760,21 @@ $color4: #ff8e4a;
         margin-top: 100px;
     }
 
-    .img-index{
-        width: 100%;
-        height: 100vh;
-    
-            &__img {
-                width: 100%;
-                height: 100vh;
-                margin: auto;
-            }
+    .titulo-h1{
+        display: flex;
+        margin: auto;
+        width: 90%;
+        justify-content: center;
+        text-align: center;
+        margin: 50px auto 0;
+        font-size: 40px;
+        font-family: 'Poppins', sans-serif;
     }
 
     .contenido-destacado{
         display: flex;
         width: 80%;
-        margin: 70px auto 0;
+        margin: 30px auto 0;
     
             &__texto1{
                 font-size: 30px;
@@ -897,10 +801,6 @@ $color4: #ff8e4a;
 
         &__link__texto{
             font-size: 15px;
-        }
-
-        &__link__texto:hover{
-            color: black;
         }
 
         &__link__icon{
@@ -1123,10 +1023,5 @@ $color4: #ff8e4a;
             width: 30%;
             border: none;
         }
-
-        &__contenedor__boton:hover{
-            border: #ff5f00 2px solid;
-        }
-        
     }
 }

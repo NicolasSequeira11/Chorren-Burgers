@@ -9,6 +9,10 @@
 
 .contenido-destacado{
 
+        &__contenedor{
+            background-color: map-get(c.$color-inicio,"color1");
+        }
+
         &__link{
             color: map-get(c.$color-inicio,"color4");
         }
@@ -17,8 +21,12 @@
             color: map-get(c.$color-inicio,"color3");
         }
 
+        &__texto2{
+            color: map-get(c.$color-inicio,"color3");
+        }
+
         &__texto2:hover{
-            text-decoration-color: map-get(c.$color-inicio,"color1");
+            color: map-get(c.$color-inicio,"color3");
         }
 
 }
@@ -59,23 +67,32 @@
         &__link__texto{
             color: map-get(c.$color-menu,"color2");
         }
-
-        &__link__texto:hover{
-            color: map-get(c.$color-menu,"color1");
-        }
 }
 
 .menu{
     
     &__contenedor__descripcion{
-        background-color: map-get(c.$color-inicio,"color3");
+        background-color: map-get(c.$color-menu,"color3");
     }
 
     &__contenedor__img:hover > &__img__texto__descripcion{
-        background-color: map-get(c.$color-inicio,"color3");
-        color: map-get(c.$color-inicio,"color2");
+        background-color: map-get(c.$color-menu,"color3");
+        color: map-get(c.$color-menu,"color2");
         
     }
+}
+
+.title-menu__contenedor{
+    background: rgb(236,78,11);
+    background: linear-gradient(90deg, rgba(236,78,11,1) 65%, rgba(255,255,255,0) 100%);
+}
+
+.title-menu{
+    color: map-get(c.$color-menu,"color3");
+}
+
+.title-menu__texto{
+    color: map-get(c.$color-menu,"color3");
 }
 
 /* COLOR SUCURSAL */
@@ -87,9 +104,28 @@
         &__titulo{
             color: map-get(c.$color-sucursal,"color1");
         }
+
+        &__reserva__titulo{
+            background-color: map-get(c.$color-sucursal,"color1");
+            color: map-get(c.$color-sucursal,"color3");
+        }
+
+        &__reserva__boton{
+            background-color: map-get(c.$color-header,"color5");
+            color: map-get(c.$color-header,"color3");
+        }
 }
 
 /* COLOR PROMOCIONES */
+
+.promo-titulo{
+    background: rgb(236,78,11);
+    background: linear-gradient(90deg, rgba(236,78,11,1) 65%, rgba(255,255,255,0) 100%);
+}
+
+.promo-titulo__texto{
+    color: map-get(c.$color-promociones,"color3");
+}
 
 /* COLOR CONTACTO */
 
@@ -98,7 +134,8 @@
     background-color: map-get(c.$color-contacto,"color3");
 
         &__titulo{
-            color: map-get(c.$color-contacto,"color1");
+            color: map-get(c.$color-contacto,"color3");
+            background-color: map-get(c.$color-contacto,"color1");
         }
 }
 
@@ -153,8 +190,12 @@
         
     .form{
 
-        .form__contenedor__boton:active{
-            background-color: map-get(c.$color-contacto,"color3");
+        &__contenedor__boton:hover{
+            border: map-get(c.$color-contacto,"color1") 2px solid;
+        }
+
+        &__contenedor__boton:active{
+            background-color: map-get(c.$color-contacto,"color1");
             color: map-get(c.$color-contacto,"color1");
         }
     }
