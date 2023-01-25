@@ -502,7 +502,7 @@
 }
 
 .form__contenedor__titulo {
-  color: #ffffff;
+  color: #EC4E0B;
 }
 .form__contenedor__input {
   border: 1px #000000 solid;
@@ -546,6 +546,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* ------------- HOME ------------- */
@@ -991,6 +992,8 @@
   width: 100%;
   margin: auto;
   padding: 15px;
+  animation-name: img-home;
+  animation-duration: 2s;
 }
 .local__contenedor {
   display: flex;
@@ -1105,6 +1108,8 @@
   flex-direction: column;
   width: 100%;
   font-family: "Poppins", sans-serif;
+  animation-name: img-home;
+  animation-duration: 2s;
 }
 .form__titulo {
   width: 95%;
@@ -1130,9 +1135,7 @@
   width: 100%;
   margin: 5px auto;
   border-radius: 5px;
-  height: 7vh;
   padding: 10px;
-  cursor: pointer;
   font-family: "Sintony", sans-serif;
 }
 .form__contenedor__textarea {
@@ -1140,7 +1143,6 @@
   margin: 5px auto;
   border-radius: 5px;
   padding: 10px;
-  cursor: pointer;
   font-family: "Sintony", sans-serif;
 }
 .form__contenedor__boton {
