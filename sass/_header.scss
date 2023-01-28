@@ -116,6 +116,7 @@
     padding: 1px;
     font-size: 15px;
     border-radius: 7px;
+    text-decoration: none;
     animation-name: boton_pedido;
     animation-duration: 0.3s;
 
@@ -137,7 +138,7 @@
         &__texto{
             text-decoration: none;
             color: map-get(c.$color-header,"color3");
-            padding: 10px;
+            padding: 10px 10px 10px 0;
             margin: auto;
             font-size: 15px;
             font-family: 'Poppins', sans-serif;
@@ -147,9 +148,8 @@
             color: map-get(c.$color-header,"color3");
         }
 
-        &__contenedor{
-            margin: auto;
-            text-decoration: none;
+        &__wpp{
+            padding: 5px;
         }
 }
 
@@ -219,22 +219,28 @@
 
 
 .pedido{
-    width: 100%;
+    display: flex;
     margin: auto;
-    margin-top: -17vh;
+    justify-content: center;
+    color: map-get(c.$color-header,"color3");
+    background-color: map-get(c.$color-header,"color5");
+    padding: 1px;
+    margin-bottom: 50vh;
     font-size: 15px;
     border-radius: 7px;
+    text-decoration: none;
+    animation-name: boton_pedido;
+    animation-duration: 0.3s;
 
         &__texto{
-            padding: 10px;
+            padding: 10px 10px 10px 0;
             margin: auto;
             text-align: center;
             font-size: 20px;
         }
 
-        &__contenedor{
-            width: 50%;
-            margin: auto;
+        &__wpp{
+            padding: 5px;
         }
 }
 }

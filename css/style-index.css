@@ -105,6 +105,7 @@
   padding: 1px;
   font-size: 15px;
   border-radius: 7px;
+  text-decoration: none;
   animation-name: boton_pedido;
   animation-duration: 0.3s;
 }
@@ -124,7 +125,7 @@
 .pedido__texto {
   text-decoration: none;
   color: #ffffff;
-  padding: 10px;
+  padding: 10px 10px 10px 0;
   margin: auto;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
@@ -132,9 +133,8 @@
 .pedido__texto:hover {
   color: #ffffff;
 }
-.pedido__contenedor {
-  margin: auto;
-  text-decoration: none;
+.pedido__wpp {
+  padding: 5px;
 }
 
 @media screen and (max-width: 1100px) {
@@ -192,21 +192,27 @@
     background-color: #ffffff;
   }
   .pedido {
-    width: 100%;
+    display: flex;
     margin: auto;
-    margin-top: -17vh;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #0dc143;
+    padding: 1px;
+    margin-bottom: 50vh;
     font-size: 15px;
     border-radius: 7px;
+    text-decoration: none;
+    animation-name: boton_pedido;
+    animation-duration: 0.3s;
   }
   .pedido__texto {
-    padding: 10px;
+    padding: 10px 10px 10px 0;
     margin: auto;
     text-align: center;
     font-size: 20px;
   }
-  .pedido__contenedor {
-    width: 50%;
-    margin: auto;
+  .pedido__wpp {
+    padding: 5px;
   }
 }
 .footer {
