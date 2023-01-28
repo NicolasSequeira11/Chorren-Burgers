@@ -555,15 +555,46 @@
                 padding: 10px;
             }
     
-            &__reserva__boton{
-                text-decoration: none;
-                margin: auto;
-                text-align: center;
-                padding: 13px;
-                border-radius: 5px;
-                font-family: 'Sintony', sans-serif;
+    }
+
+    .reserva{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        padding: 1px;
+        font-size: 15px;
+        border-radius: 7px;
+        text-decoration: none;
+        animation-name: boton_pedido;
+        animation-duration: 0.3s;
+    
+            @keyframes boton_pedido{
+                0%{
+                    opacity: 0%;
+                }
+                100%{
+                    opacity: 100%;
+                }
+            }
+            
+            &:hover{
+                padding: 1px;
+                transition-duration: 0.2s;
             }
     
+            &__texto{
+                text-decoration: none;
+                padding: 10px 10px 10px 0px;
+                margin: auto 0;
+                font-size: 20px;
+                font-family: 'Poppins', sans-serif;
+            }
+    
+            &__wpp{
+                height: 100%;
+                margin: auto 0;
+                padding: 5px;
+            }
     }
     
     .local-mapa{

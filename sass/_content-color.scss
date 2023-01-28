@@ -116,6 +116,22 @@
         }
 }
 
+.reserva{
+    color: map-get(c.$color-sucursal,"color3");
+    background-color: map-get(c.$color-sucursal,"color5");
+
+        &:hover{
+            box-shadow: 0 0 12px 0 map-get(c.$color-sucursal,"color5");;
+        }
+
+        &__texto{
+            color: map-get(c.$color-sucursal,"color3");
+        }
+
+        &__texto:hover{
+            color: map-get(c.$color-sucursal,"color3");
+        }
+}
 /* COLOR PROMOCIONES */
 
 .promo-titulo{

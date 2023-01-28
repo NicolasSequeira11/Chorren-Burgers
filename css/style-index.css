@@ -135,6 +135,7 @@
 }
 .pedido__wpp {
   padding: 5px;
+  height: 100%;
 }
 
 @media screen and (max-width: 1100px) {
@@ -485,6 +486,20 @@
 }
 .local__reserva__boton {
   background-color: #0dc143;
+  color: #ffffff;
+}
+
+.reserva {
+  color: #ffffff;
+  background-color: #0dc143;
+}
+.reserva:hover {
+  box-shadow: 0 0 12px 0 #0dc143;
+}
+.reserva__texto {
+  color: #ffffff;
+}
+.reserva__texto:hover {
   color: #ffffff;
 }
 
@@ -1030,13 +1045,41 @@
   font-family: "Sintony", sans-serif;
   padding: 10px;
 }
-.local__reserva__boton {
-  text-decoration: none;
+
+.reserva {
+  display: flex;
   margin: auto;
-  text-align: center;
-  padding: 13px;
-  border-radius: 5px;
-  font-family: "Sintony", sans-serif;
+  justify-content: center;
+  padding: 1px;
+  font-size: 15px;
+  border-radius: 7px;
+  text-decoration: none;
+  animation-name: boton_pedido;
+  animation-duration: 0.3s;
+}
+@keyframes boton_pedido {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.reserva:hover {
+  padding: 1px;
+  transition-duration: 0.2s;
+}
+.reserva__texto {
+  text-decoration: none;
+  padding: 10px 10px 10px 0px;
+  margin: auto 0;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.reserva__wpp {
+  height: 100%;
+  margin: auto 0;
+  padding: 5px;
 }
 
 .local-mapa {
